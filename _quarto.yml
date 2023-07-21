@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  favicon: img/favicon.ico
+  navbar:
+    logo: media/hprtc_logo.png
+    left:
+      - href: index.qmd
+        text: Home
+      - text: "About"
+        menu:
+          - about/facilities.qmd
+          - about/conduct.qmd
+          - about/committee.qmd
+          - about/history.qmd
+          - about/constitution.qmd
+          - about/lifemembers.qmd
+          - text: Legal
+            href: about/legal.qmd
+      - text: "Coaching"
+        href: coaching.md
+      - text: "Competition"
+        menu:
+          - competition/adult.md
+          - competition/junior.md
+      - text: "Social"
+        href: social.md
+      - text: "News"
+      - text: "Members"
+        href: members.md
+      - text: "Contact"
+        href: contact.md
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    include-in-header:
+      file: header.html
+
+execute:
+  freeze: true
+

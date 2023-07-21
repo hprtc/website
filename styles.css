@@ -1,0 +1,28 @@
+/* css styles */
+
+
+:root {
+  --bs-font-sans-serif: 'Fira Sans', sans-serif;
+}
+
+body {
+  font-family: 'Fira Sans', Georgia, Serif;
+  line-height: 1.5em;
+  background-color: #faf8f8;
+}
+
+.navbar-logo {
+  max-height: 42px;
+}
+
+table {
+  border-color: gray;
+}
+td, th {
+  background-color: #e5e5e5 !important;
+}
+
+img {
+  float: left;
+  padding-right: 4ex;
+}

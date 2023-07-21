@@ -1,0 +1,67 @@
+---
+link: /coaching/
+slug: coaching
+title: Coaching
+---
+
+![image alt <](/media/BenLongridge.jpg) One of the key strengths of a club is its coaches.  HE Parker prides itself on selecting great coaches who can instruct, encourage and improve our junior competition teams but also provide assistance on tennis technique for all of our members, regardless of age, gender, physical ability, fitness or experience.  We are delighted to have the services of [**Ben Longridge**](https://www.advantedgetennisacademy.com.au) as our head coach.
+
+  * Ben is a Tennis Victoria - Club Professional Coach
+  * Ben has a young family of his own
+  * Ben was previously a junior coach at Donvale Tennis Club
+
+### Philosophy
+
+Ben and his coaching team have a primary focus of improving members tennis skill in a positive, fun manner. Group coaching is designed to give all students, in particularly children a solid grounding in all relevant areas of the game should they want to develop their tennis further with private lessons and extra match play (tournaments, representative competition etc.). We pride ourselves on everyone leaving each lesson with key areas and themes to work on, making the path to improvement easier to understand.
+
+Different coaching types require strategies but they still concentrate on these key areas:
+
+  * Technical skill
+  * Rules of the game
+  * Gameplay
+  * Tactics
+  * Physical preparedness
+  * Co-ordination
+
+As a player receiving coaching, there are some important things to remember that will make the coaching experience a more rewarding one:
+
+  1. Embrace the tasks you are given
+  2. Make the coach aware of any injury you or your child may be carrying prior to the lesson start
+  3. Arrive at least 5 mins before the session to ensure you are ready to start and maximise your time on court
+  4. The coaching team encourages self-practice in your own time. Before your next lesson, take some time to work on themes that have been introduced in previous lessons.
+  5. If in doubt about weather, please call or text Ben for advice as to what is happening.
+  6. The coaching staff are knowledgeable. Feel free to ask questions!
+  7. Equipment to bring: racquet, water bottle, towel, hat (summer months)
+
+### Coaching options
+
+#### Hot Shots
+
+  * 4-7 year olds and introductory program.
+  * For students beginning to play after school tennis.
+  * Students are introduced to the concept of a warm up.
+  * Fundamental motor skills are taught, as well as movement techniques used in tennis.
+  * Swing patterns are taught and practised on all commonly used tennis strokes.
+
+#### Junior Lessons
+
+  * Separated into 3 groups, Development, Competitive and Performance.
+  * All aspects of the game are covered in a fast paced and fun environment, from further evolution of stroke technique in development groups, right up to tactical analysis and fitness training in performance groups.
+
+#### Squad training
+
+  * For more advanced juniors.
+  * There is an emphasis on fitness, rallying and match tactics in these sessions.
+  * There is an effort made to ensure there is a low coach-player ratio and squads run longer than junior lessons, with the aim of challenging the players.
+
+#### Private lessons
+
+  * For maximum game improvement.
+  * Lessons are individually tailored for each client according to their specific needs and abilities.
+  * For those who really want to extend themselves, or just looking to improve a little bit faster.
+  * Private lessons are designed to work together with junior lessons and squads.
+
+#### Adult lessons
+
+  * Adult lessons can be booked on a small group, or individual basis.
+  * These lessons are personalized to help achieve the goals of the client, ranging from stroke production, through to tactical knowledge and fitness based sessions.

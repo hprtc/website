@@ -1,0 +1,38 @@
+---
+title: "Heathmont Parker Reserve Tennis Club"
+---
+
+Heathmont Parker Reserve Tennis Club (HPRTC) is located at the end of Heathmont Road, Heathmont, Melbourne. Our aim is to provide an exceptional playing venue for all our members to enjoy our courts. Creating a fun social scene is important and the committee looks to ensure our club is sustainable to all members in years to come.
+
+### Our sponsors
+
+
+<div>
+
+<a href="https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/" target="_blank">
+<img src="img/sponsors/Bendigo.jpg" alt="Bendigo Bank" class="img-responsive" height=200/>
+</a>
+
+<a href="https://www.bakersdelight.com.au/bakery-locator/heathmont/" target="_blank">
+<img src="img/sponsors/BakersDelight.jpg" alt="Bakers Delight" class="img-responsive" height=200 />
+</a>
+
+<a href="https://www.barryplant.com.au/offices/heathmont/" target="_blank">
+<img src="img/sponsors/BarryPlant.jpg" alt="Barry Plant" class="img-responsive" height=200/>
+</a>
+
+<a href="https://www.head.com/en-IC/sports/tennis/" target="_blank">
+<img src="img/sponsors/Head.png" alt="Head" class="img-responsive" height=200/>
+</a>
+
+</div>
+
+
+### Contact
+HE Parker Reserve Tennis Club<br>
+PO Box 695, Heathmont,<br>
+Victoria, Australia<br>
+
+<a href="https://goo.gl/maps/T6buFNDCdJ5ufmNy6"><img src = "/img/google_map_icon.png" height=64px alt = "Google map" style="vertical-align: text-bottom;"></a><a href="https://www.facebook.com/hprtc/"><img src = "/img/facebook_logo.png" height=64px alt = "Facebook" style="vertical-align: text-bottom; margin-left: 7px;"></a>
+
+      
