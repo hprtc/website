@@ -2,8 +2,15 @@ project:
   type: website
 
 website:
+  site-url: https://hprtc.org.au
+  title: "Heathmont Parker Reserve Tennis Club"
   favicon: img/favicon.ico
+  google-analytics: "UA-156112561-1"
   navbar:
+    background: "#dfdfdf"
+    title: "&nbsp;"
+    pinned: true
+    search: true
     logo: media/hprtc_logo.png
     left:
       - href: index.qmd
@@ -31,6 +38,11 @@ website:
         href: members.md
       - text: "Contact"
         href: contact.md
+  page-footer:
+    left: "© 2023"
+    background: "#555555"
+    right: Made with [Quarto](https://quarto.org) by [Rob J Hyndman](https://robjhyndman.com)
+
 
 format:
   html:
