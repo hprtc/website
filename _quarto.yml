@@ -26,7 +26,7 @@ website:
           - competition/junior.md
       - text: "Social"
         href: social.md
-      - text: "News"
+      - news/index.qmd
       - text: "Members"
         href: members.md
       - text: "Contact"

@@ -1,0 +1,5 @@
+--- 
+title: News
+listing: 
+  sort: "date desc"
+---
