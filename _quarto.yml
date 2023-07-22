@@ -17,7 +17,6 @@ website:
         text: Home
       - text: "About"
         menu:
-          - about/facilities.qmd
           - about/conduct.qmd
           - about/committee.qmd
           - about/history.qmd
@@ -26,7 +25,7 @@ website:
           - text: Legal
             href: about/legal.qmd
       - text: "Coaching"
-        href: coaching.md
+        href: coaching.qmd
       - text: "Competition"
         menu:
           - competition/adult.md
@@ -34,6 +33,7 @@ website:
       - text: "Social"
         href: social.md
       - news/index.qmd
+      - facilities.qmd
       - text: "Members"
         href: members.md
       - text: "Contact"
@@ -43,6 +43,7 @@ website:
     background: "#555555"
     right: Made with [Quarto](https://quarto.org) by [Rob J Hyndman](https://robjhyndman.com)
 
+date-format: "D MMMM YYYY"
 
 format:
   html:
@@ -56,4 +57,3 @@ execute:
   freeze: true
   echo: false
   message: false
-

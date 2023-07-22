@@ -2,12 +2,12 @@
 date: 2019-12-21 10:51:24+00:00
 layout: post
 title: Junior Christmas Breakup
-banner: /media/junior_breakup_2019_1.jpg
+image: /media/junior_breakup_2019_1.jpg
 tags:
 - juniors
 ---
 
-The junior Christmas break-up party was held on Saturday morning. 
+The junior Christmas break-up party was held on Saturday morning.
 
 **Award winners for the day were:**
 

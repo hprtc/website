@@ -4,7 +4,7 @@ layout: post
 title: Christmas BBQ
 tags:
 - social
-banner: /media/christmas_2019_2.jpg
+image: /media/christmas_2019_2.jpg
 ---
 
 We had a lovely BBQ and some social tennis on Saturday. Here are some photos of the festivities and tennis.

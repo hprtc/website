@@ -22,11 +22,6 @@ td, th {
   background-color: #e5e5e5 !important;
 }
 
-img {
-  float: left;
-  padding-right: 4ex;
-}
-
 a {
   text-decoration: none;
 }
@@ -50,4 +45,20 @@ a {
 .imgcolumn img {
   margin-top: 0px;
   vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .imgcolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .imgcolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

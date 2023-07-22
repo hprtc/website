@@ -4,7 +4,8 @@ author: Rob Hyndman
 layout: post
 slug: open-day-2023
 title: Open Day Sunday 26 Feb
-banner: "media/coaching.jpg"
+image: "/media/coaching.jpg"
+description: From 1pm at HE Parker Reserve Tennis Club, Heathmont. Lots of FREE activities ...
 tags:
   - open-day
 ---

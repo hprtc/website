@@ -3,7 +3,7 @@ author: Sue Moreland
 date: 2020-02-24
 layout: post
 title: President's report
-banner: "media/heathmont_winners.jpg"
+image: "/media/heathmont_winners.jpg"
 tags:
   - president's report
 ---

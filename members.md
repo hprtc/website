@@ -44,12 +44,8 @@ Alternatively, you can fill in the club membership form and send it with payment
 > The Treasurer, PO Box 695, Heathmont, 3135. (treasurer@hprtc.org.au)
 
   [![wordicon](/media/wordicon.png) MS-Word version](/media/HPRTC-New-Membership-Application.docx)
-  
-  &nbsp;
 
   [![pdf_icon](/media/pdf_icon.png) PDF version](/media/HPRTC-New-Membership-Application.pdf)
-  
-  &nbsp;
 
 Our club is affiliated with [Tennis Victoria](http://www.tennis.com.au/vic/).  Our affiliation provides all members with personal accident insurance at tennis.
 

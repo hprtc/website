@@ -3,7 +3,7 @@ author: Sue Moreland
 date: 2019-06-13 00:32:45+00:00
 layout: post
 title: President's report
-banner: "media/P1040894.jpg"
+image: "/media/P1040894.jpg"
 tags:
   - president's report
 ---
@@ -30,4 +30,3 @@ Social tennis will be running on Wednesday evenings 7pm, beginning on the 19th o
 I wish you all the best for your next season, Happy Hitting, See you on court.
 
 Sue Moreland
-

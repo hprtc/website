@@ -6,7 +6,7 @@ slug: dec2020-competition-results
 title: Pre-Xmas Tournament Results
 tags:
   - competition
-banner: "media/Dec_2020_8.jpg"
+image: "/media/Dec_2020_8.jpg"
 ---
 
 
@@ -83,4 +83,3 @@ Congratulations to all the winners of the pre-Xmas tournament.
 4. Brian Pensa, Nicole Pensa
 
 <img src="/media/Dec_2020_5.jpg" width="80%">
-

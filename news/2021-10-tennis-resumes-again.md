@@ -3,7 +3,7 @@ date: 2021-10-04
 author: Rob Hyndman
 layout: post
 title: "Court re-opening details"
-banner: "media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png"
+image: "/media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png"
 tags:
   - facilities
 ---

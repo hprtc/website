@@ -3,7 +3,7 @@ date: 2020-10-26
 author: Rob Hyndman
 layout: post
 title: "Membership renewal 2020/2021 discount"
-banner: "media/christmas_2019_6.jpg"
+image: "/media/christmas_2019_6.jpg"
 tags:
   - memberships
 ---

@@ -11,20 +11,67 @@ HE Parker Reserve Tennis Club when the Heathmont Methodist Tennis Club was grant
 Four courts and a log cabin clubhouse were built and the Clubhouse was officially opened in 1975 although conditions were still rather primitive. By 1984, 2 more courts were built and shortly after that 3 courts were floodlit for night tennis.
 
 
-![](/media/history1.jpg)
-
-![](/media/history2.jpg)
-
-![](/media/history3.jpg)
-
-![](/media/history4.jpg)
-
-![](/media/history5.jpg)
+```{r}
+#| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
+source(here::here("carousel.R"))
+carousel("gallery-carousel", 5000,
+         yaml.load_file(here::here("history-carousel.yml")))
+```
 
 
+::: {#gallery .column-page}
+:::
+
+```{=html}
+<style>
+
+#quarto-content main {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 
+html {
+  scroll-behavior: smooth;
+}
 
+.carousel.card {
+  padding-top: 2em;
+}
 
+.carousel img {
+  width: 100%;
+  margin-bottom: 110px;
+}
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
 
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.carousel-dark .carousel-caption {
+  color: #fff;
+}
+
+.carousel-dark .carousel-indicators {
+  color: #fff;
+}
+img {
+  float: none;
+  padding-right: 0px;
+}
+
+.touch {
+
+}
+
+.page-item.active .page-link {
+    color: #faf8f8;
+    background-color: #faf8f8;
+    border-color: #faf8f8;
+}
+</style>
+```

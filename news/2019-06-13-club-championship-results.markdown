@@ -5,7 +5,7 @@ title: Club Championship Results
 tags:
 - Competition
 - club championships
-banner: "/media/club_championships_2019.png"
+image: "/media/club_championships_2019.png"
 ---
 
 What a weekend!!
@@ -37,4 +37,3 @@ Results below:
   * **Open Mixed Doubles** - Darren Loebert & Heather McMillan def Rod & Ella Beanland 8/6
 
 [Some photos](/media/HEPTC-2019-club-championships.pdf)
-

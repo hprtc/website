@@ -1,5 +1,6 @@
---- 
+---
 title: News
-listing: 
+listing:
   sort: "date desc"
+  image-placeholder: /media/DSC_7835.jpg
 ---

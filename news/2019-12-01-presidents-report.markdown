@@ -3,7 +3,7 @@ author: Sue Moreland
 date: 2019-12-01
 layout: post
 title: President's report
-banner: "media/auray_hu.png"
+image: "/media/auray_hu.png"
 tags:
   - president's report
 ---

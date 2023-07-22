@@ -3,7 +3,7 @@ author: Sue Moreland
 date: 2019-10-15 21:38:18+00:00
 layout: post
 title: President's report
-banner: "media/IMAG0871.jpg"
+image: "/media/IMAG0871.jpg"
 tags:
   - president's report
 ---
@@ -32,4 +32,3 @@ FREE! MULCH Help yourselves to the mulch pile behind the club. We have way too m
 Happy Hitting!
 
 Sue Moreland
-

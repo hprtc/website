@@ -3,7 +3,7 @@ author: Sue Moreland
 date: 2020-06-20
 layout: post
 title: President's report
-banner: "media/sue_lenelle.jpg"
+image: "/media/sue_lenelle.jpg"
 tags:
   - president's report
 ---

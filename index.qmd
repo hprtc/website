@@ -1,3 +1,12 @@
+---
+listing:
+  id: news
+  contents: news/*.md
+  sort: "date desc"
+  type: grid
+  max-items: 3
+---
+
 ::: {#hero-banner .column-screen}
 ::: {.grid .column-page}
 ::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
@@ -11,7 +20,7 @@ Heathmont Parker Reserve Tennis&nbsp;Club
 ```{r}
 #| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
 source("carousel.R")
-carousel("gallery-carousel", 5000, 
+carousel("gallery-carousel", 5000,
          yaml.load_file("carousel.yml"))
 ```
 :::
@@ -28,7 +37,7 @@ carousel("gallery-carousel", 5000,
   background-color: rgb(80,125,181);
 }
 
-#quarto-content main { 
+#quarto-content main {
   margin-top: 0;
   padding-top: 0;
 }
@@ -90,7 +99,13 @@ img {
 }
 
 .touch {
-  
+
+}
+
+.page-item.active .page-link {
+    color: #faf8f8;
+    background-color: #faf8f8;
+    border-color: #faf8f8;
 }
 </style>
 ```
@@ -106,9 +121,10 @@ Victoria, Australia<br>
 
 <a href="https://goo.gl/maps/T6buFNDCdJ5ufmNy6"><img src = "/img/google_map_icon.png" height=64px alt = "Google map" style="vertical-align: text-bottom;"></a><a href="https://www.facebook.com/hprtc/"><img src = "/img/facebook_logo.png" height=64px alt = "Facebook" style="vertical-align: text-bottom; margin-left: 7px;"></a>
 
-&nbsp;
+<h3>Recent news</h3>
 
-<br><br>    
+::: {#news}
+:::
 
 <h3>Our sponsors</h3>
 
@@ -133,14 +149,3 @@ Victoria, Australia<br>
 <a href="https://www.head.com/en-IC/sports/tennis/" target="_blank">
 <img src="img/sponsors/Head.png" alt="Head" class="img-responsive" height=100/>
 </a>
-
-</div>
-</div>
-
-<div>
-
-
-
-
-
-</div>
