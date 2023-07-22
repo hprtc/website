@@ -1,12 +1,104 @@
----
-title: "Heathmont Parker Reserve Tennis Club"
----
+::: {#hero-banner .column-screen}
+::: {.grid .column-page}
+::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
+
+::: h1
+Heathmont Parker Reserve Tennis&nbsp;Club
+:::
+
+:::
+
+```{r}
+#| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
+source("carousel.R")
+carousel("gallery-carousel", 5000, 
+         yaml.load_file("carousel.yml"))
+```
+:::
+:::
+
+::: {#gallery .column-page}
+:::
+
+```{=html}
+<style>
+
+#hero-banner {
+  padding-top: 35px;
+  background-color: rgb(80,125,181);
+}
+
+#quarto-content main { 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.headline {
+font-size: 1.25em;
+font-weight: 300;
+padding-bottom: 1em;
+}
+
+.headline p {
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline ul li {
+  margin-bottom: 0.3em;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 100%;
+  margin-bottom: 110px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.h1 {
+color: #fff;
+}
+.carousel-dark .carousel-caption {
+  color: #fff;
+}
+
+.carousel-dark .carousel-indicators {
+  color: #fff;
+}
+img {
+  float: none;
+  padding-right: 0px;
+}
+
+.touch {
+  
+}
+</style>
+```
+
+&nbsp;<br>
 
 Heathmont Parker Reserve Tennis Club (HPRTC) is located at the end of Heathmont Road, Heathmont, Melbourne. Our aim is to provide an exceptional playing venue for all our members to enjoy our courts. Creating a fun social scene is important and the committee looks to ensure our club is sustainable to all members in years to come.
 
-![](/media/DSC_0759_edited-1.jpg)
-
-&nbsp;<br>
 
 > HE Parker Reserve Tennis Club<br>
 PO Box 695, Heathmont,<br>
@@ -18,28 +110,37 @@ Victoria, Australia<br>
 
 <br><br>    
 
-
 <h3>Our sponsors</h3>
 
-
-<div>
-
+<div class="imgrow">
+<div class="imgcolumn">
 <a href="https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/" target="_blank">
 <img src="img/sponsors/Bendigo.jpg" alt="Bendigo Bank" class="img-responsive" height=100/>
 </a>
-
+</div>
+<div class="imgcolumn">
 <a href="https://www.bakersdelight.com.au/bakery-locator/heathmont/" target="_blank">
 <img src="img/sponsors/BakersDelight.jpg" alt="Bakers Delight" class="img-responsive" height=100 />
 </a>
-
+</div>
+<div class="imgcolumn">
 <a href="https://www.barryplant.com.au/offices/heathmont/" target="_blank">
 <img src="img/sponsors/BarryPlant.jpg" alt="Barry Plant" class="img-responsive" height=100/>
 </a>
 
+</div>
+<div class="imgcolumn">
 <a href="https://www.head.com/en-IC/sports/tennis/" target="_blank">
 <img src="img/sponsors/Head.png" alt="Head" class="img-responsive" height=100/>
 </a>
 
 </div>
+</div>
+
+<div>
 
 
+
+
+
+</div>

@@ -27,3 +27,27 @@ img {
   padding-right: 4ex;
 }
 
+a {
+  text-decoration: none;
+}
+
+
+.imgrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/* Create four equal columns that sits next to each other */
+.imgcolumn {
+  flex: 25%;
+  max-width: 25%;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.imgcolumn img {
+  margin-top: 0px;
+  vertical-align: middle;
+}
