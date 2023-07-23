@@ -2,7 +2,7 @@
 date: 2020-03-14
 layout: post
 title: Working bee
-banner: "media/workingbee_march2020.jpg"
+image: "/media/workingbee_march2020.jpg"
 tags:
   - facilities
 ---

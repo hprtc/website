@@ -6,7 +6,7 @@ slug: dec2020-competition
 title: AdvantEdge Tennis Pre-Xmas Tournament
 tags:
   - competition
-banner: "media/dec2020-competition.png"
+image: "/media/dec2020-competition.png"
 ---
 
 <a href="https://forms.gle/TDEFKJzXca5dpWCSA">

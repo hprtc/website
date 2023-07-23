@@ -3,7 +3,7 @@ date: 2020-10-31
 author: Rob Hyndman
 layout: post
 title: "Updated tennis rules"
-banner: "media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png"
+image: "/media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png"
 tags:
   - facilities
 ---
@@ -24,4 +24,3 @@ Under the latest restrictions, tennis can be played at our Parker Reserve Courts
 Strict adherence to physical distancing and hygiene protocols is required and expected at all times --- and we appreciate everyone's cooperation in this regard.
 
 Happy hitting!
-

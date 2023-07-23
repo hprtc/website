@@ -4,7 +4,7 @@ author: Mal McDonald
 layout: post
 slug: vale-frank-secomb
 title: Vale Frank Secomb (1918 - 2022)
-banner: "media/Frank_Secomb.jpg"
+image: "/media/Frank_Secomb.jpg"
 tags:
   - history
 ---

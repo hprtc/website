@@ -2,7 +2,7 @@
 date: 2020-02-05
 layout: post
 title: New nets thanks to Bendigo Bank
-banner: /media/newnets1.jpg
+image: /media/newnets1.jpg
 tags:
 - grants
 - facilities

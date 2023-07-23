@@ -4,7 +4,7 @@ author: Sue Moreland
 layout: post
 slug: dec2020-competition
 title: President's Report
-banner: "media/sue_lenelle.jpg"
+image: "/media/sue_lenelle.jpg"
 tags:
   - president's report
 ---

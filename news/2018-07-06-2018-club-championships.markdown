@@ -5,7 +5,7 @@ title: 2018 Club championships
 tags:
 - Competition
 - club championships
-banner: /media/P1040787.jpg
+image: /media/P1040787.jpg
 ---
 
 Congratulations to the winners of our club championships! And thanks to everyone who participated.

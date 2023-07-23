@@ -1,8 +1,18 @@
 ---
 link: /about/facilities
 slug: facilities
-title: Our Facilities
+title: Facilities
 ---
+
+
+```{=html}
+<style>
+img {
+  float: right;
+  padding-right: 4ex;
+}
+</style>
+```
 
 ## Courts
 

@@ -3,7 +3,7 @@ date: 2019-12-22
 layout: post
 title: Crumbles Bakehouse 2020 Interclub Challenge
 slug: interclub-challenge
-banner: /media/DSC_0666.jpg
+image: /media/DSC_0666.jpg
 tags:
 - competition
 ---

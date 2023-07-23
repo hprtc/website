@@ -3,7 +3,7 @@ date: 2023-07-20
 author: Sue Cornish
 layout: post
 title: Net Post July 2023
-banner: "media/christmas_2019_6.jpg"
+image: "/media/christmas_2019_6.jpg"
 tags:
   - agm
   - newsletters

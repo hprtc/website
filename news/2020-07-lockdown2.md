@@ -3,7 +3,7 @@ date: 2020-07-08
 author: Lenelle Thomsen
 layout: post
 title: Lockdown 2
-banner: "media/lockdown2.png"
+image: "/media/lockdown2.png"
 tags:
   - facilities
 ---

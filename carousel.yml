@@ -1,18 +1,17 @@
 
 - caption: "Tennis for all ages"
-  image: "media/DSC_0759_edited-1.jpg"
+  image: "/media/DSC_0759_edited-1.jpg"
   link: ""
 
 - caption: "Coaching"
-  image: "media/coaching.jpg"
+  image: "/media/coaching.jpg"
   link: "#presentations"
   text: "Hot shots"
 
 - caption: "Competition"
-  image: "media/competition.jpg"
+  image: "/media/competition.jpg"
   link: "index.qmd"
 
 - caption: "Social Tennis"
-  image: "media/social.jpg"
+  image: "/media/social.jpg"
   link: "social.md"
-

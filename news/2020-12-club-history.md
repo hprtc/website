@@ -4,7 +4,7 @@ author: Mal McDonald
 layout: post
 slug: frank-secomb
 title: A bit of club history
-banner: "media/Frank_Secomb.jpg"
+image: "/media/Frank_Secomb.jpg"
 tags:
   - history
 ---

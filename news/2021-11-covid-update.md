@@ -4,7 +4,7 @@ author: Rob Hyndman
 layout: post
 slug: covid-update
 title: "Community sport is back"
-banner: "media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png"
+image: "/media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png"
 tags:
   - facilities
 ---

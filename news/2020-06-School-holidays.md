@@ -2,7 +2,7 @@
 date: 2020-06-21
 layout: post
 title: School holiday program
-banner: /media/school_holidays.png
+image: /media/school_holidays.png
 tags:
 - juniors
 ---
