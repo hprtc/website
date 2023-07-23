@@ -18,7 +18,7 @@ Saturday social at 2 pm will continue each week with a Christmas BBQ on the 21st
 
 The new club uniform of polo shirts and matching shorts or skorts has been well received. The teams certainly look very smart when all members are wearing them.
 
-You can place your orders by email to “secretary@hprtc.org.au” or directly to Erina Wotherspoon.
+You can place your orders by email to “[secretary@hprtc.org.au](mailto:secretary@hprtc.org.au)” or directly to Erina Wotherspoon.
 
 Free Mulch. Please help yourselves to the mulch piles near the entrance of the club. Your garden will appreciate it during the summer months
 
