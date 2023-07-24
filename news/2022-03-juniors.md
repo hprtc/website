@@ -20,7 +20,7 @@ Congrats to a number of our teams who have made finals, and well done to all tea
 It is also time for us to get organised for the 2022 Winter Season.
 
 Please respond to this link so we can get our teams organised.
-https://forms.gle/ea5biv7hsY5c7anG9
+[https://forms.gle/ea5biv7hsY5c7anG9](https://forms.gle/ea5biv7hsY5c7anG9)
 
 We need to enter teams with ERT by the end of this month so we need feedback from you all by FRIDAY MARCH 25. If you could click on the link asap that would be great. Go on- it will only take a couple of minutes!!
 
@@ -32,7 +32,7 @@ A reminder that club membership is required to be part of a team. That is a non-
 
 Chris is extremely helpful and will support you with all you need to do to have this on track. If you're not sure of your membership status, feel free to get in touch with her to check. (chriswish17@gmail.com , 0401 722 040) Please also note that membership runs on a financial year basis. All players will need to ensure that they keep their membership status current when we get to June/July. Chris is very happy to navigate this with you to cover Juniors seasons.
 
-Membership form is available from the club website at https://hprtc.org.au/members/. It's a great deal really. Not many sports have membership that enables you to have such great access to club facilities at other times during every week of the year!
+Membership form is [available from the club website](/members.html). It's a great deal really. Not many sports have membership that enables you to have such great access to club facilities at other times during every week of the year!
 
 ## FINALS
 
