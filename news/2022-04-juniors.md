@@ -11,7 +11,7 @@ tags:
 
 ## Summer 2021/22 wrap up
 
-Congratulations to our JOSD1 and JDC1 teams who were successful in [winning their grand final matches](/news/juniors-gf-apr22-04-2022.html) last weekend. Well done to Hana, Nicholas, Matthew, Charlie, Harvey, Alynna, Raymond and Milo!!
+Congratulations to our JOSD1 and JDC1 teams who were successful in [winning their grand final matches](/news/2022-04-juniors_grand_finals.md) last weekend. Well done to Hana, Nicholas, Matthew, Charlie, Harvey, Alynna, Raymond and Milo!!
 
 Congrats also to our four Open Rubbers teams who all very narrowly lost in the semi's with a bit of controversy thrown in for good measure. Well done Seamus, Parth, Tim, Igor, Freya, Will, Antony, Melrain, Jessica and Jaden. We are super proud of the maturity, great sporting attitudes and a lot of dignity displayed by all of our players. You are wonderful young people. The next season is going to be great for you all.
 
