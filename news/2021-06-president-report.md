@@ -13,7 +13,7 @@ Dear members
 
 Another financial year is ending, and our AGM is fast approaching. It has been very rewarding to see that people have persisted with their tennis commitments through the many interruptions of our regular scheduled routines both competitions, coaching and social play. We have certainly become very flexible in adjusting our calendars at the drop of a hat!
 
-The main purpose of this note is to request some commitment at renewal time to fill in the [entire Membership form](/members/) and sign the [Code of Conduct form](/about/conduct/) (which we sent out with the AGM notification), as we strive to update our records.
+The main purpose of this note is to request some commitment at renewal time to fill in the [entire Membership form](/members.html) and sign the [Code of Conduct form](/about/conduct.html) (which we sent out with the AGM notification), as we strive to update our records.
 
 As it is important to us that your privacy is protected, these forms are kept in house for the HE Parker tennis Club records.
 

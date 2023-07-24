@@ -16,4 +16,4 @@ Dorothy Janky and one of her staff from Bendigo Bank visited the club yesterday 
 
 ![](/media/newnets2.jpg)
 
-[![](/img/clients/Bendigo.jpg)](https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/)
+[![](/img/sponsors/Bendigo.jpg)](https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/)
