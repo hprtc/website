@@ -11,7 +11,7 @@ website:
     title: "&nbsp;"
     pinned: true
     search: true
-    logo: media/hprtc_logo.png
+    logo: img/hprtc_logo.png
     left:
       - href: index.qmd
         text: Home
@@ -39,7 +39,7 @@ website:
       - text: "Contact"
         href: contact.md
   page-footer:
-    left: "© 2023"
+    left: "© 2023 Heathmont Parker Reserve Tennis Club"
     background: "#555555"
     right: Made with [Quarto](https://quarto.org) by [Rob J Hyndman](https://robjhyndman.com)
 
