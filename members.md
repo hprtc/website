@@ -1,6 +1,7 @@
 ---
-link: /members/
 slug: members
+aliases:
+  - /members/
 title: Memberships
 ---
 
@@ -59,6 +60,8 @@ Gate keys are available to all adult members for a $50 deposit. Members holding 
   4. Keys are not to be lent or shared with non-members at any time
 
 ## Club t-shirts
+
+Fill in [this form](https://forms.gle/5Xp6DEkxVfnBVrMcA). Then click below to pay.
 
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1NW7mkJNJiUn3wOdrDq0zHIX"
