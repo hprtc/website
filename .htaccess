@@ -1,0 +1,9 @@
+Options +FollowSymLinks +Indexes
+DirectoryIndex index.html
+
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.hprtc\.org\.au$ [NC]
+RewriteRule ^(.*)$ https://hprtc.org\.au/$1 [R=301,L]
