@@ -2,8 +2,7 @@
 date: 2022-05-06
 author: Mal McDonald
 layout: post
-slug: vale-frank-secomb
-title: Vale Frank Secomb (1918 - 2022)
+title: "Vale Frank Secomb (1918 - 2022)"
 image: "/media/Frank_Secomb.jpg"
 tags:
   - history
