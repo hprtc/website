@@ -1,7 +1,8 @@
 ---
 date: 2022-05-22
 layout: post
-title: 2022 Club Championships
+title: Club Championships 2022
+author: Ben Longridge
 tags:
   - club championships
   - competition

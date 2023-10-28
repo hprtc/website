@@ -2,6 +2,7 @@
 date: 2021-05-22
 layout: post
 title: HPRTC Club Championships
+author: Ben Longridge
 tags:
   - club championships
   - competition
