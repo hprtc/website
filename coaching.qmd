@@ -82,3 +82,8 @@ As a player receiving coaching, there are some important things to remember that
 
   * Adult lessons can be booked on a small group, or individual basis.
   * These lessons are personalized to help achieve the goals of the client, ranging from stroke production, through to tactical knowledge and fitness based sessions.
+
+
+<video controls autoplay>
+<source src=/media/adult_squad.mp4 type = "video/mp4" width=100% height="800px">
+</video>
