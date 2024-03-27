@@ -14,13 +14,12 @@ Teams are selected at the discretion of the Junior Selection Committee. Each tea
 
 ### Contact Information
 
-**Junior Convener**: Andrea Johnson
-[junior@hprtc.org.au](mailto:junior@hprtc.org.au) or 0411 606 802
+**Junior Convener**: James Ni
+[junior@hprtc.org.au](mailto:junior@hprtc.org.au)
 
 **President**: Sue Cornish
 [president@hprtc.org.au](mailto:president@hprtc.org.au) or 0425 711 364
 
-**Club Phone Number**: (03) 9729 0973
 
 ### Commitment to play
 
