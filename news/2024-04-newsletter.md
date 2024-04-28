@@ -10,4 +10,4 @@ tags:
 
 Welcome to our first Newsletter for 2024.
 
-<iframe src='https://docs.google.com/gview?url=https://github.com/hprtc/website/blob/main/newsletters/HPRTC_Newsletter_April_2024.pdf" &embedded=true' width='100%' height=465></iframe>
+<iframe src="/newsletters/HPRTC_Newsletter_April_2024.pdf" width='100%' height=465></iframe>
