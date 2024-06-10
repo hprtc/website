@@ -33,7 +33,10 @@ Please note: These grace periods do not apply if the adult or junior has been a 
 
 **New members (or members with updated information): please fill in the [online membership form](https://forms.gle/g1vQEMYdZYFuNnx9A).**
 
-**To complete your membership application, or renew an existing membership, please complete payment by clicking on the relevant "Pay" button below.**
+To complete your membership application, or renew an existing annual membership (expires 30 June), please complete payment by either:
+
+* Direct Deposit to H E Parker Reserve Tennis Club BSB:633000  Acc: 133850826; **or**
+* Clicking on the relevant “Pay” button below. (Note: Online payments include provider's surcharge.)
 
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1MODouJNJiUn3wOdxEgLmWs0"
@@ -47,6 +50,9 @@ Alternatively, you can fill in the club membership form and send it with payment
   [![wordicon](/media/wordicon.png) MS-Word version](/media/HPRTC-New-Membership-Application.docx)
 
   [![pdf_icon](/media/pdf_icon.png) PDF version](/media/HPRTC-New-Membership-Application.pdf)
+
+
+If joining after 31 December, a 6 month membership ending 30 June is available by paying half the annual fee via direct debit, or the full 1 year fee plus pro rata to 30 June.
 
 Our club is affiliated with [Tennis Victoria](http://www.tennis.com.au/vic/).  Our affiliation provides all members with personal accident insurance at tennis.
 
