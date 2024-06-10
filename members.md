@@ -38,6 +38,8 @@ To complete your membership application, or renew an existing annual membership 
 * Direct Deposit to H E Parker Reserve Tennis Club BSB:633000  Acc: 133850826; **or**
 * Clicking on the relevant “Pay” button below. (Note: Online payments include provider's surcharge.)
 
+If joining after 1 January, a prorata payment to June 30th is available by paying via direct debit.
+
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <stripe-pricing-table pricing-table-id="prctbl_1MODouJNJiUn3wOdxEgLmWs0"
 publishable-key="pk_live_51MLIjWJNJiUn3wOdGfOCdgBbBjkcDaWpDn1zkkoM57Yf6NX6sRVu55wFWbXfa9U9cijp2LOpLX0WcF3Pi8uVC9Ma00zOXshH93">
@@ -47,12 +49,9 @@ Alternatively, you can fill in the club membership form and send it with payment
 
 > The Treasurer, PO Box 695, Heathmont, 3135. ([treasurer@hprtc.org.au](mailto:treasurer@hprtc.org.au))
 
-  [![wordicon](/media/wordicon.png) MS-Word version](/media/HPRTC-New-Membership-Application.docx)
+  [![wordicon](/media/wordicon.png) MS-Word version](/media/Membership-Application_20231201.docx)
 
-  [![pdf_icon](/media/pdf_icon.png) PDF version](/media/HPRTC-New-Membership-Application.pdf)
-
-
-If joining after 31 December, a 6 month membership ending 30 June is available by paying half the annual fee via direct debit, or the full 1 year fee plus pro rata to 30 June.
+  [![pdf_icon](/media/pdf_icon.png) PDF version](/media/Membership-Application_20231201.pdf)
 
 Our club is affiliated with [Tennis Victoria](http://www.tennis.com.au/vic/).  Our affiliation provides all members with personal accident insurance at tennis.
 
