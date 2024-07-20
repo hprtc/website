@@ -130,22 +130,23 @@ Victoria, Australia<br>
 
 <div class="imgrow">
 <div class="imgcolumn">
-<a href="https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/" target="_blank">
-<img src="img/sponsors/Bendigo.jpg" alt="Bendigo Bank" class="img-responsive" height=100/>
-</a>
+  <a href="https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/" target="_blank">
+    <img src="img/sponsors/Bendigo.jpg" alt="Bendigo Bank" class="img-responsive" height=100/>
+  </a>
 </div>
 <div class="imgcolumn">
-<a href="https://www.bakersdelight.com.au/bakery-locator/heathmont/" target="_blank">
-<img src="img/sponsors/BakersDelight.jpg" alt="Bakers Delight" class="img-responsive" height=100 />
-</a>
+  <a href="https://www.bakersdelight.com.au/bakery-locator/heathmont/" target="_blank">
+    <img src="img/sponsors/BakersDelight.jpg" alt="Bakers Delight" class="img-responsive" height=100 />
+  </a>
 </div>
 <div class="imgcolumn">
-<a href="https://www.barryplant.com.au/offices/heathmont/" target="_blank">
-<img src="img/sponsors/BarryPlant.jpg" alt="Barry Plant" class="img-responsive" height=100/>
-</a>
-
+  <a href="https://www.barryplant.com.au/offices/heathmont/" target="_blank">
+    <img src="img/sponsors/BarryPlant.jpg" alt="Barry Plant" class="img-responsive" height=100/>
+  </a>
 </div>
 <div class="imgcolumn">
-<a href="https://www.head.com/en-IC/sports/tennis/" target="_blank">
-<img src="img/sponsors/Head.png" alt="Head" class="img-responsive" height=100/>
-</a>
+  <a href="https://www.head.com/en-IC/sports/tennis/" target="_blank">
+    <img src="img/sponsors/Head.png" alt="Head" class="img-responsive" height=100/>
+  </a>
+</div>
+</div>
