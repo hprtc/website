@@ -12,8 +12,6 @@ Four courts and a log cabin clubhouse were built and the Clubhouse was officiall
 
 
 ```{r}
-library(rmarkdown)
-library(knitr)
 #| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
 source(here::here("carousel.R"))
 carousel("gallery-carousel", 5000,

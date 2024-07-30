@@ -55,3 +55,4 @@ format:
 execute:
   echo: false
   message: false
+  freeze: auto
