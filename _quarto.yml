@@ -53,6 +53,5 @@ format:
       file: header.html
 
 execute:
-  freeze: true
   echo: false
   message: false
