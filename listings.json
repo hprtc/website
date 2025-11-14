@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/news/index.html",
+    "listing": "/index.html",
     "items": [
+      "/news/2025-dec-club-championships.html",
       "/news/2025-06-newsletter.html",
       "/news/2024-club-championships.html",
       "/news/2024-sep-tournament.html",
@@ -25,16 +26,16 @@
       "/news/2021-06-president-report.html",
       "/news/2021-05-club-championships.html",
       "/news/2020-12-2020-competition.html",
-      "/news/2020-12-president-report.html",
       "/news/2020-12-club-history.html",
+      "/news/2020-12-president-report.html",
       "/news/2020-11-2020-competition.html",
       "/news/2020-10-tennis-resumes.html",
       "/news/2020-10-memberships.html",
       "/news/2020-08-stage4.html",
       "/news/2020-07-president-report.html",
       "/news/2020-07-lockdown2.html",
-      "/news/2020-06-club-championships.html",
       "/news/2020-06-School-holidays.html",
+      "/news/2020-06-club-championships.html",
       "/news/2020-06-president-report.html",
       "/news/2020-05-return.html",
       "/news/2020-03-covid19.html",
@@ -68,8 +69,9 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/news/index.html",
     "items": [
+      "/news/2025-dec-club-championships.html",
       "/news/2025-06-newsletter.html",
       "/news/2024-club-championships.html",
       "/news/2024-sep-tournament.html",
@@ -93,8 +95,8 @@
       "/news/2021-06-president-report.html",
       "/news/2021-05-club-championships.html",
       "/news/2020-12-2020-competition.html",
-      "/news/2020-12-club-history.html",
       "/news/2020-12-president-report.html",
+      "/news/2020-12-club-history.html",
       "/news/2020-11-2020-competition.html",
       "/news/2020-10-tennis-resumes.html",
       "/news/2020-10-memberships.html",
