@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/news/index.html",
     "items": [
+      "/news/2026-06-newsletter.html",
       "/news/2025-dec-club-championships.html",
       "/news/2025-06-newsletter.html",
       "/news/2024-club-championships.html",
@@ -69,8 +70,9 @@
     ]
   },
   {
-    "listing": "/news/index.html",
+    "listing": "/index.html",
     "items": [
+      "/news/2026-06-newsletter.html",
       "/news/2025-dec-club-championships.html",
       "/news/2025-06-newsletter.html",
       "/news/2024-club-championships.html",
@@ -95,8 +97,8 @@
       "/news/2021-06-president-report.html",
       "/news/2021-05-club-championships.html",
       "/news/2020-12-2020-competition.html",
-      "/news/2020-12-president-report.html",
       "/news/2020-12-club-history.html",
+      "/news/2020-12-president-report.html",
       "/news/2020-11-2020-competition.html",
       "/news/2020-10-tennis-resumes.html",
       "/news/2020-10-memberships.html",
