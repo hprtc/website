@@ -65,3 +65,11 @@ a {
     max-width: 100%;
   }
 }
+
+.club-logo {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 1.5rem auto;
+}
