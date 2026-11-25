@@ -128,11 +128,6 @@ Heathmont, Victoria 3135<br>
 
 <h3>Our sponsors</h3>
 
-.imgcolumn img {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 <div class="imgrow">
 <div class="imgcolumn">
   <a href="https://www.bendigobank.com.au/branch/vic/heathmont-community-bank-branch/" target="_blank">
