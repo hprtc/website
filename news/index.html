@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -37,14 +40,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-0ad649dfc57bf5bf9301ca305ccac8ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-69f82c18dab07872768d8a679f0bc36f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,12 +99,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather" rel="stylesheet">
 <!-- Google tag (gtag.js) -->
@@ -114,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -146,11 +144,11 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
@@ -161,8 +159,7 @@ window.Quarto = {
     <span class="navbar-title">&nbsp;</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -245,6 +242,7 @@ window.Quarto = {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -256,7 +254,7 @@ window.Quarto = {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -283,22 +281,24 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1782691200000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<div class="thumbnail"><a href="../news/2026-06-newsletter.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1782691200000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="thumbnail"><a href="../news/2026-06-newsletter.html" class="no-external-icon">
 
 <img loading="lazy" src="../img/canvas.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2026-06-newsletter.html" class="no-external">Net Post June 2026</a>
+<a href="../news/2026-06-newsletter.html" class="no-external-icon">Net Post June 2026</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2026-06-newsletter.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2026-06-newsletter.html" class="no-external-icon">
 Here is our June newsletter with information regarding our upcoming AGM on Sunday 26 July 2026 at the Club at 12.30pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2026-06-newsletter.html" class="no-external">
+<a href="../news/2026-06-newsletter.html" class="no-external-icon">
 <div class="listing-date">
 29 June 2026
 </div>
@@ -308,22 +308,24 @@ Diana Baxter
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1763078400000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../news/2025-dec-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1763078400000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail"><a href="../news/2025-dec-club-championships.html" class="no-external-icon">
 
 <img loading="lazy" src="../img/2025-club-champs.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2025-dec-club-championships.html" class="no-external">Please help us celebrate 50 years</a>
+<a href="../news/2025-dec-club-championships.html" class="no-external-icon">Please help us celebrate 50 years</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2025-dec-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2025-dec-club-championships.html" class="no-external-icon">
 
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2025-dec-club-championships.html" class="no-external">
+<a href="../news/2025-dec-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 14 November 2025
 </div>
@@ -333,22 +335,24 @@ Diana Baxter
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1750636800000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<div class="thumbnail"><a href="../news/2025-06-newsletter.html" class="no-external">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1750636800000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="thumbnail"><a href="../news/2025-06-newsletter.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/news_06_2024.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2025-06-newsletter.html" class="no-external">Net Post June 2025</a>
+<a href="../news/2025-06-newsletter.html" class="no-external-icon">Net Post June 2025</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2025-06-newsletter.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2025-06-newsletter.html" class="no-external-icon">
 Here is our June newsletter with information regarding our upcoming AGM on Saturday 2 August at the Club at 1.00pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2025-06-newsletter.html" class="no-external">
+<a href="../news/2025-06-newsletter.html" class="no-external-icon">
 <div class="listing-date">
 23 June 2025
 </div>
@@ -358,22 +362,24 @@ Diana Baxter
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1729641600000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
-<div class="thumbnail"><a href="../news/2024-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1729641600000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
+<div class="thumbnail"><a href="../news/2024-club-championships.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/clubchamps2024.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2024-club-championships.html" class="no-external">HPRTC Club Championships 2024</a>
+<a href="../news/2024-club-championships.html" class="no-external-icon">HPRTC Club Championships 2024</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2024-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2024-club-championships.html" class="no-external-icon">
 Are you a financial member of HE Parker Reserve Tennis Club? If so, you’re entitled to compete in the 2024 Club Championships at NO COST!
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2024-club-championships.html" class="no-external">
+<a href="../news/2024-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 23 October 2024
 </div>
@@ -383,22 +389,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1721520000000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
-<div class="thumbnail"><a href="../news/2024-sep-tournament.html" class="no-external">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1721520000000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+<div class="thumbnail"><a href="../news/2024-sep-tournament.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/sep2024header.jpeg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2024-sep-tournament.html" class="no-external">HPRTC Family Fun Doubles Bonanza</a>
+<a href="../news/2024-sep-tournament.html" class="no-external-icon">HPRTC Family Fun Doubles Bonanza</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2024-sep-tournament.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2024-sep-tournament.html" class="no-external-icon">
 Dear All,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2024-sep-tournament.html" class="no-external">
+<a href="../news/2024-sep-tournament.html" class="no-external-icon">
 <div class="listing-date">
 21 July 2024
 </div>
@@ -408,22 +416,24 @@ Diana Baxter
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1720656000000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="201">
-<div class="thumbnail"><a href="../news/2024-07-agm.html" class="no-external">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1720656000000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="201">
+<div class="thumbnail"><a href="../news/2024-07-agm.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/christmas_2019_6.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2024-07-agm.html" class="no-external">AGM 2024</a>
+<a href="../news/2024-07-agm.html" class="no-external-icon">AGM 2024</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2024-07-agm.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2024-07-agm.html" class="no-external-icon">
 All members are invited to the Annual General Meeting of the H E Parker Reserve Tennis Club to be held at the Club house on Saturday 27 July 2024, commencing at 1:00pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2024-07-agm.html" class="no-external">
+<a href="../news/2024-07-agm.html" class="no-external-icon">
 <div class="listing-date">
 11 July 2024
 </div>
@@ -433,22 +443,24 @@ Diana Baxter
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1719532800000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<div class="thumbnail"><a href="../news/2024-06-newsletter.html" class="no-external">
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1719532800000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="thumbnail"><a href="../news/2024-06-newsletter.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/news_06_2024.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2024-06-newsletter.html" class="no-external">Net Post June 2024</a>
+<a href="../news/2024-06-newsletter.html" class="no-external-icon">Net Post June 2024</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2024-06-newsletter.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2024-06-newsletter.html" class="no-external-icon">
 Here is our June newsletter with information regarding our upcoming AGM on Saturday 27 July at the Club at 1.00pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2024-06-newsletter.html" class="no-external">
+<a href="../news/2024-06-newsletter.html" class="no-external-icon">
 <div class="listing-date">
 28 June 2024
 </div>
@@ -458,22 +470,24 @@ Diana Baxter
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<div class="thumbnail"><a href="../news/2024-04-newsletter.html" class="no-external">
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
+<div class="thumbnail"><a href="../news/2024-04-newsletter.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/news_04_2024.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2024-04-newsletter.html" class="no-external">Net Post April 2024</a>
+<a href="../news/2024-04-newsletter.html" class="no-external-icon">Net Post April 2024</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2024-04-newsletter.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2024-04-newsletter.html" class="no-external-icon">
 Welcome to our first Newsletter for 2024.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2024-04-newsletter.html" class="no-external">
+<a href="../news/2024-04-newsletter.html" class="no-external-icon">
 <div class="listing-date">
 28 April 2024
 </div>
@@ -483,22 +497,24 @@ Sue Cornish
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1707696000000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
-<div class="thumbnail"><a href="../news/2024-02-adult-squad.html" class="no-external">
+<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1707696000000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<div class="thumbnail"><a href="../news/2024-02-adult-squad.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/adult_squad.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2024-02-adult-squad.html" class="no-external">Adult Tennis Squad</a>
+<a href="../news/2024-02-adult-squad.html" class="no-external-icon">Adult Tennis Squad</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2024-02-adult-squad.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2024-02-adult-squad.html" class="no-external-icon">
 Are you a tennis tragic? Just can’t wait for your weekly night comp match each week? But you get on the court and you’re constantly frustrated that you can’t do what you…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2024-02-adult-squad.html" class="no-external">
+<a href="../news/2024-02-adult-squad.html" class="no-external-icon">
 <div class="listing-date">
 12 February 2024
 </div>
@@ -508,22 +524,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1698451200000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
-<div class="thumbnail"><a href="../news/2023-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1698451200000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="thumbnail"><a href="../news/2023-club-championships.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/DSC_0809_edited-1.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2023-club-championships.html" class="no-external">HPRTC Club Championships 2023</a>
+<a href="../news/2023-club-championships.html" class="no-external-icon">HPRTC Club Championships 2023</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2023-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2023-club-championships.html" class="no-external-icon">
 The HPRTC Club Championships will be held on 7 November this year.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2023-club-championships.html" class="no-external">
+<a href="../news/2023-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 28 October 2023
 </div>
@@ -533,22 +551,24 @@ James Ni
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1689811200000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="661">
-<div class="thumbnail"><a href="../news/2023-07-newsletter.html" class="no-external">
+<div class="quarto-post image-right" data-index="10" data-listing-date-sort="1689811200000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="661">
+<div class="thumbnail"><a href="../news/2023-07-newsletter.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/christmas_2019_6.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2023-07-newsletter.html" class="no-external">Net Post July 2023</a>
+<a href="../news/2023-07-newsletter.html" class="no-external-icon">Net Post July 2023</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2023-07-newsletter.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2023-07-newsletter.html" class="no-external-icon">
 Welcome to a belated Newsletter. Many things have happened since the last newsletter and events are being planned for 2023. A long overdue Club Champs is pinned for Saturday…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2023-07-newsletter.html" class="no-external">
+<a href="../news/2023-07-newsletter.html" class="no-external-icon">
 <div class="listing-date">
 20 July 2023
 </div>
@@ -558,22 +578,24 @@ Sue Cornish
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1676419200000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail"><a href="../news/2023-02-openday.html" class="no-external">
+<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1676419200000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail"><a href="../news/2023-02-openday.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/coaching.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2023-02-openday.html" class="no-external">Open Day Sunday 26 Feb</a>
+<a href="../news/2023-02-openday.html" class="no-external-icon">Open Day Sunday 26 Feb</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2023-02-openday.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2023-02-openday.html" class="no-external-icon">
 <p>From 1pm at HE Parker Reserve Tennis Club, Heathmont. Lots of FREE activities …</p>
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2023-02-openday.html" class="no-external">
+<a href="../news/2023-02-openday.html" class="no-external-icon">
 <div class="listing-date">
 15 February 2023
 </div>
@@ -583,22 +605,24 @@ Rob Hyndman
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1658707200000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="801">
-<div class="thumbnail"><a href="../news/2022-07-agm.html" class="no-external">
+<div class="quarto-post image-right" data-index="12" data-listing-date-sort="1658707200000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="801">
+<div class="thumbnail"><a href="../news/2022-07-agm.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/christmas_2019_6.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-07-agm.html" class="no-external">AGM and Membership</a>
+<a href="../news/2022-07-agm.html" class="no-external-icon">AGM and Membership</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-07-agm.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-07-agm.html" class="no-external-icon">
 All members are invited to the Annual General Meeting of the H E Parker Reserve Tennis Club to be held at the Club house on Saturday 13 August 2022, commencing at 1:00pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-07-agm.html" class="no-external">
+<a href="../news/2022-07-agm.html" class="no-external-icon">
 <div class="listing-date">
 25 July 2022
 </div>
@@ -608,22 +632,24 @@ Erina Wotherspoon
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1656201600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail"><a href="../news/2022-06-netpost.html" class="no-external">
+<div class="quarto-post image-right" data-index="13" data-listing-date-sort="1656201600000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail"><a href="../news/2022-06-netpost.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/ben_club_champs_2022.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-06-netpost.html" class="no-external">Net Post June 2022</a>
+<a href="../news/2022-06-netpost.html" class="no-external-icon">Net Post June 2022</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-06-netpost.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-06-netpost.html" class="no-external-icon">
 &nbsp;
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-06-netpost.html" class="no-external">
+<a href="../news/2022-06-netpost.html" class="no-external-icon">
 <div class="listing-date">
 26 June 2022
 </div>
@@ -633,23 +659,25 @@ Erina Wotherspoon
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1653177600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail"><a href="../news/2022-05-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1653177600000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail"><a href="../news/2022-05-club-championships.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/club-champs-2022.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-05-club-championships.html" class="no-external">Club Championships 2022</a>
+<a href="../news/2022-05-club-championships.html" class="no-external-icon">Club Championships 2022</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-05-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-05-club-championships.html" class="no-external-icon">
 
 
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-05-club-championships.html" class="no-external">
+<a href="../news/2022-05-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 22 May 2022
 </div>
@@ -659,22 +687,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1651795200000" data-listing-file-modified-sort="1784518388773" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
-<div class="thumbnail"><a href="../news/2022-5-Frank-Secomb.html" class="no-external">
+<div class="quarto-post image-right" data-index="15" data-listing-date-sort="1651795200000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
+<div class="thumbnail"><a href="../news/2022-5-Frank-Secomb.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/Frank_Secomb.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-5-Frank-Secomb.html" class="no-external">Vale Frank Secomb (1918 - 2022)</a>
+<a href="../news/2022-5-Frank-Secomb.html" class="no-external-icon">Vale Frank Secomb (1918 - 2022)</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-5-Frank-Secomb.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-5-Frank-Secomb.html" class="no-external-icon">
 Today we farewelled Frank Secomb, our first life member with his wife Betty. Frank had settled in Heathmont after the second world war and had a significant influence on the…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-5-Frank-Secomb.html" class="no-external">
+<a href="../news/2022-5-Frank-Secomb.html" class="no-external-icon">
 <div class="listing-date">
 6 May 2022
 </div>
@@ -684,22 +714,24 @@ Mal McDonald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1649721600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="695">
-<div class="thumbnail"><a href="../news/2022-04-juniors.html" class="no-external">
+<div class="quarto-post image-right" data-index="16" data-listing-date-sort="1649721600000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="695">
+<div class="thumbnail"><a href="../news/2022-04-juniors.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/wdta.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-04-juniors.html" class="no-external">Junior Tennis Update: April 2022</a>
+<a href="../news/2022-04-juniors.html" class="no-external-icon">Junior Tennis Update: April 2022</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-04-juniors.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-04-juniors.html" class="no-external-icon">
 Congratulations to our JOSD1 and JDC1 teams who were successful in winning their grand final matches last weekend. Well done to Hana, Nicholas, Matthew, Charlie, Harvey…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-04-juniors.html" class="no-external">
+<a href="../news/2022-04-juniors.html" class="no-external-icon">
 <div class="listing-date">
 12 April 2022
 </div>
@@ -709,22 +741,24 @@ Andrea Johnson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1648944000000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="199">
-<div class="thumbnail"><a href="../news/2022-04-juniors_grand_finals.html" class="no-external">
+<div class="quarto-post image-right" data-index="17" data-listing-date-sort="1648944000000" data-listing-file-modified-sort="1795608019500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="199">
+<div class="thumbnail"><a href="../news/2022-04-juniors_grand_finals.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/IMG_2278.JPG" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-04-juniors_grand_finals.html" class="no-external">Juniors grand final wins!</a>
+<a href="../news/2022-04-juniors_grand_finals.html" class="no-external-icon">Juniors grand final wins!</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-04-juniors_grand_finals.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-04-juniors_grand_finals.html" class="no-external-icon">
 We are super proud of our Sunday juniors who both won their final today!
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-04-juniors_grand_finals.html" class="no-external">
+<a href="../news/2022-04-juniors_grand_finals.html" class="no-external-icon">
 <div class="listing-date">
 3 April 2022
 </div>
@@ -734,47 +768,24 @@ Andrea Johnson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1648166400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1098">
-<div class="thumbnail"><a href="../news/2022-03-juniors.html" class="no-external">
-
-<img loading="lazy" src="../img/ao_2022.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../news/2022-03-juniors.html" class="no-external">Junior Tennis Update: March 2022</a>
-</h3>
-<div class="delink listing-description"><a href="../news/2022-03-juniors.html" class="no-external">
-🎾 Greetings Tennis Families. 🎾
-</a></div>
-</div>
-<div class="metadata">
-<a href="../news/2022-03-juniors.html" class="no-external">
-<div class="listing-date">
-25 March 2022
-</div>
-<div class="listing-author">
-Andrea Johnson
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1648166400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
-<div class="thumbnail"><a href="../news/2022-03-news.html" class="no-external">
+<div class="quarto-post image-right" data-index="18" data-listing-date-sort="1648166400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="thumbnail"><a href="../news/2022-03-news.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/sue_lenelle.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2022-03-news.html" class="no-external">Newsletter March 2022</a>
+<a href="../news/2022-03-news.html" class="no-external-icon">Newsletter March 2022</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2022-03-news.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2022-03-news.html" class="no-external-icon">
 A warm welcome to all at Parker Reserve TC. A particular welcome to all new members.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2022-03-news.html" class="no-external">
+<a href="../news/2022-03-news.html" class="no-external-icon">
 <div class="listing-date">
 25 March 2022
 </div>
@@ -784,22 +795,51 @@ Erina Wotherspoon
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1634947200000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="109">
-<div class="thumbnail"><a href="../news/2021-11-covid-update.html" class="no-external">
+<div class="quarto-post image-right" data-index="19" data-listing-date-sort="1648166400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1098">
+<div class="thumbnail"><a href="../news/2022-03-juniors.html" class="no-external-icon">
+
+<img loading="lazy" src="../img/ao_2022.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../news/2022-03-juniors.html" class="no-external-icon">Junior Tennis Update: March 2022</a>
+</h3>
+<div class="listing-description">
+<a href="../news/2022-03-juniors.html" class="no-external-icon">
+🎾 Greetings Tennis Families. 🎾
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../news/2022-03-juniors.html" class="no-external-icon">
+<div class="listing-date">
+25 March 2022
+</div>
+<div class="listing-author">
+Andrea Johnson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-listing-date-sort="1634947200000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="109">
+<div class="thumbnail"><a href="../news/2021-11-covid-update.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2021-11-covid-update.html" class="no-external">Community sport is back</a>
+<a href="../news/2021-11-covid-update.html" class="no-external-icon">Community sport is back</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2021-11-covid-update.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2021-11-covid-update.html" class="no-external-icon">
 We’re so excited to say we’re able to open up a little further.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2021-11-covid-update.html" class="no-external">
+<a href="../news/2021-11-covid-update.html" class="no-external-icon">
 <div class="listing-date">
 23 October 2021
 </div>
@@ -809,22 +849,24 @@ Rob Hyndman
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1633305600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="373">
-<div class="thumbnail"><a href="../news/2021-10-tennis-resumes-again.html" class="no-external">
+<div class="quarto-post image-right" data-index="21" data-listing-date-sort="1633305600000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="373">
+<div class="thumbnail"><a href="../news/2021-10-tennis-resumes-again.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2021-10-tennis-resumes-again.html" class="no-external">Court re-opening details</a>
+<a href="../news/2021-10-tennis-resumes-again.html" class="no-external-icon">Court re-opening details</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2021-10-tennis-resumes-again.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2021-10-tennis-resumes-again.html" class="no-external-icon">
 We have some good news, we are back open for play. Coaching and organised member play can resume, however competition will come at a later date, stay tuned for these details.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2021-10-tennis-resumes-again.html" class="no-external">
+<a href="../news/2021-10-tennis-resumes-again.html" class="no-external-icon">
 <div class="listing-date">
 4 October 2021
 </div>
@@ -834,22 +876,24 @@ Rob Hyndman
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1624924800000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
-<div class="thumbnail"><a href="../news/2021-06-president-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="22" data-listing-date-sort="1624924800000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="266">
+<div class="thumbnail"><a href="../news/2021-06-president-report.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/sue_lenelle.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2021-06-president-report.html" class="no-external">President’s Report</a>
+<a href="../news/2021-06-president-report.html" class="no-external-icon">President’s Report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2021-06-president-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2021-06-president-report.html" class="no-external-icon">
 Dear members
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2021-06-president-report.html" class="no-external">
+<a href="../news/2021-06-president-report.html" class="no-external-icon">
 <div class="listing-date">
 29 June 2021
 </div>
@@ -859,22 +903,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1621641600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-<div class="thumbnail"><a href="../news/2021-05-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="23" data-listing-date-sort="1621641600000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
+<div class="thumbnail"><a href="../news/2021-05-club-championships.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/DSC_0809_edited-1.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2021-05-club-championships.html" class="no-external">HPRTC Club Championships</a>
+<a href="../news/2021-05-club-championships.html" class="no-external-icon">HPRTC Club Championships</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2021-05-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2021-05-club-championships.html" class="no-external-icon">
 <strong>Update</strong>: Please note that our planned Club Championships will no longer take place 12-13 June. We will reschedule in due course.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2021-05-club-championships.html" class="no-external">
+<a href="../news/2021-05-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 22 May 2021
 </div>
@@ -884,22 +930,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="24" data-listing-date-sort="1608681600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
-<div class="thumbnail"><a href="../news/2020-12-2020-competition.html" class="no-external">
+<div class="quarto-post image-right" data-index="24" data-listing-date-sort="1608681600000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
+<div class="thumbnail"><a href="../news/2020-12-2020-competition.html" class="no-external-icon">
 
 <img loading="lazy" src="../media/Dec_2020_8.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-12-2020-competition.html" class="no-external">Pre-Xmas Tournament Results</a>
+<a href="../news/2020-12-2020-competition.html" class="no-external-icon">Pre-Xmas Tournament Results</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-12-2020-competition.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-12-2020-competition.html" class="no-external-icon">
 Congratulations to all the winners of the pre-Xmas tournament.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-12-2020-competition.html" class="no-external">
+<a href="../news/2020-12-2020-competition.html" class="no-external-icon">
 <div class="listing-date">
 23 December 2020
 </div>
@@ -909,22 +957,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="25" data-listing-date-sort="1607126400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="118">
-<div class="thumbnail"><a href="../news/2020-12-club-history.html" class="no-external">
+<div class="quarto-post image-right" data-index="25" data-listing-date-sort="1607126400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="118">
+<div class="thumbnail"><a href="../news/2020-12-club-history.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/Frank_Secomb.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-12-club-history.html" class="no-external">A bit of club history</a>
+<a href="../news/2020-12-club-history.html" class="no-external-icon">A bit of club history</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-12-club-history.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-12-club-history.html" class="no-external-icon">
 Frank and Betty Secomb were the first Life Members of our great club. While Betty died some years ago, Frank celebrated his 102nd birthday on 20 August 2020.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-12-club-history.html" class="no-external">
+<a href="../news/2020-12-club-history.html" class="no-external-icon">
 <div class="listing-date">
 5 December 2020
 </div>
@@ -934,22 +984,24 @@ Mal McDonald
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="26" data-listing-date-sort="1607126400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251">
-<div class="thumbnail"><a href="../news/2020-12-president-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="26" data-listing-date-sort="1607126400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="251">
+<div class="thumbnail"><a href="../news/2020-12-president-report.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/sue_lenelle.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-12-president-report.html" class="no-external">President’s Report</a>
+<a href="../news/2020-12-president-report.html" class="no-external-icon">President’s Report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-12-president-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-12-president-report.html" class="no-external-icon">
 Xmas Greetings.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-12-president-report.html" class="no-external">
+<a href="../news/2020-12-president-report.html" class="no-external-icon">
 <div class="listing-date">
 5 December 2020
 </div>
@@ -959,22 +1011,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="27" data-listing-date-sort="1606089600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<div class="thumbnail"><a href="../news/2020-11-2020-competition.html" class="no-external">
+<div class="quarto-post image-right" data-index="27" data-listing-date-sort="1606089600000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="thumbnail"><a href="../news/2020-11-2020-competition.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/dec2020-competition.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-11-2020-competition.html" class="no-external">AdvantEdge Tennis Pre-Xmas Tournament</a>
+<a href="../news/2020-11-2020-competition.html" class="no-external-icon">AdvantEdge Tennis Pre-Xmas Tournament</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-11-2020-competition.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-11-2020-competition.html" class="no-external-icon">
   
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-11-2020-competition.html" class="no-external">
+<a href="../news/2020-11-2020-competition.html" class="no-external-icon">
 <div class="listing-date">
 23 November 2020
 </div>
@@ -984,22 +1038,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="28" data-listing-date-sort="1604102400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
-<div class="thumbnail"><a href="../news/2020-10-tennis-resumes.html" class="no-external">
+<div class="quarto-post image-right" data-index="28" data-listing-date-sort="1604102400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
+<div class="thumbnail"><a href="../news/2020-10-tennis-resumes.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/COVID-19_Return-to-Tennis-Guidelines_-FEATURE-IMAGE.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-10-tennis-resumes.html" class="no-external">Updated tennis rules</a>
+<a href="../news/2020-10-tennis-resumes.html" class="no-external-icon">Updated tennis rules</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-10-tennis-resumes.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-10-tennis-resumes.html" class="no-external-icon">
 Under the latest restrictions, tennis can be played at our Parker Reserve Courts, but please comply with the following rules issued by Tennis Victoria.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-10-tennis-resumes.html" class="no-external">
+<a href="../news/2020-10-tennis-resumes.html" class="no-external-icon">
 <div class="listing-date">
 31 October 2020
 </div>
@@ -1009,22 +1065,24 @@ Rob Hyndman
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="29" data-listing-date-sort="1603670400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
-<div class="thumbnail"><a href="../news/2020-10-memberships.html" class="no-external">
+<div class="quarto-post image-right" data-index="29" data-listing-date-sort="1603670400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<div class="thumbnail"><a href="../news/2020-10-memberships.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/christmas_2019_6.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-10-memberships.html" class="no-external">Membership renewal 2020/2021 discount</a>
+<a href="../news/2020-10-memberships.html" class="no-external-icon">Membership renewal 2020/2021 discount</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-10-memberships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-10-memberships.html" class="no-external-icon">
 The Committee would like to confirm that a 50% discount is on offer for renewal of membership for 2020/2021. If you haven’t as yet renewed your membership, we hope this…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-10-memberships.html" class="no-external">
+<a href="../news/2020-10-memberships.html" class="no-external-icon">
 <div class="listing-date">
 26 October 2020
 </div>
@@ -1034,22 +1092,24 @@ Rob Hyndman
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="30" data-listing-date-sort="1596499200000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
-<div class="thumbnail"><a href="../news/2020-08-stage4.html" class="no-external">
+<div class="quarto-post image-right" data-index="30" data-listing-date-sort="1596499200000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="thumbnail"><a href="../news/2020-08-stage4.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/Stock-TV-story.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-08-stage4.html" class="no-external">Stage 4 restrictions</a>
+<a href="../news/2020-08-stage4.html" class="no-external-icon">Stage 4 restrictions</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-08-stage4.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-08-stage4.html" class="no-external-icon">
 The Victorian Government announced that from 6pm on Sunday 2 August, Victoria entered a State of Disaster.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-08-stage4.html" class="no-external">
+<a href="../news/2020-08-stage4.html" class="no-external-icon">
 <div class="listing-date">
 4 August 2020
 </div>
@@ -1059,22 +1119,24 @@ Rob Hyndman
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="31" data-listing-date-sort="1596067200000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="376">
-<div class="thumbnail"><a href="../news/2020-07-president-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="31" data-listing-date-sort="1596067200000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="376">
+<div class="thumbnail"><a href="../news/2020-07-president-report.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/sue_lenelle.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-07-president-report.html" class="no-external">President’s report</a>
+<a href="../news/2020-07-president-report.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-07-president-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-07-president-report.html" class="no-external-icon">
 Greetings folks.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-07-president-report.html" class="no-external">
+<a href="../news/2020-07-president-report.html" class="no-external-icon">
 <div class="listing-date">
 30 July 2020
 </div>
@@ -1084,22 +1146,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="32" data-listing-date-sort="1594166400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
-<div class="thumbnail"><a href="../news/2020-07-lockdown2.html" class="no-external">
+<div class="quarto-post image-right" data-index="32" data-listing-date-sort="1594166400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="163">
+<div class="thumbnail"><a href="../news/2020-07-lockdown2.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/lockdown2.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-07-lockdown2.html" class="no-external">Lockdown 2</a>
+<a href="../news/2020-07-lockdown2.html" class="no-external-icon">Lockdown 2</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-07-lockdown2.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-07-lockdown2.html" class="no-external-icon">
 Dear members,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-07-lockdown2.html" class="no-external">
+<a href="../news/2020-07-lockdown2.html" class="no-external-icon">
 <div class="listing-date">
 8 July 2020
 </div>
@@ -1109,22 +1173,48 @@ Lenelle Thomsen
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="33" data-listing-date-sort="1592697600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<div class="thumbnail"><a href="../news/2020-06-School-holidays.html" class="no-external">
+<div class="quarto-post image-right" data-index="33" data-listing-date-sort="1592697600000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail"><a href="../news/2020-06-club-championships.html" class="no-external-icon">
+
+<img loading="lazy" data-src="../media/DSC_0809_edited-1.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../news/2020-06-club-championships.html" class="no-external-icon">AdvantEdge Tennis Tournaments</a>
+</h3>
+<div class="listing-description">
+<a href="../news/2020-06-club-championships.html" class="no-external-icon">
+  
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../news/2020-06-club-championships.html" class="no-external-icon">
+<div class="listing-date">
+21 June 2020
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="34" data-listing-date-sort="1592697600000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail"><a href="../news/2020-06-School-holidays.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/school_holidays.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-06-School-holidays.html" class="no-external">School holiday program</a>
+<a href="../news/2020-06-School-holidays.html" class="no-external-icon">School holiday program</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-06-School-holidays.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-06-School-holidays.html" class="no-external-icon">
 &nbsp;
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-06-School-holidays.html" class="no-external">
+<a href="../news/2020-06-School-holidays.html" class="no-external-icon">
 <div class="listing-date">
 21 June 2020
 </div>
@@ -1134,44 +1224,24 @@ Ben Longridge
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="34" data-listing-date-sort="1592697600000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
-<div class="thumbnail"><a href="../news/2020-06-club-championships.html" class="no-external">
-
-<img loading="lazy" data-src="../media/DSC_0809_edited-1.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../news/2020-06-club-championships.html" class="no-external">AdvantEdge Tennis Tournaments</a>
-</h3>
-<div class="delink listing-description"><a href="../news/2020-06-club-championships.html" class="no-external">
-  
-</a></div>
-</div>
-<div class="metadata">
-<a href="../news/2020-06-club-championships.html" class="no-external">
-<div class="listing-date">
-21 June 2020
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="35" data-listing-date-sort="1592611200000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
-<div class="thumbnail"><a href="../news/2020-06-president-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="35" data-listing-date-sort="1592611200000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
+<div class="thumbnail"><a href="../news/2020-06-president-report.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/sue_lenelle.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-06-president-report.html" class="no-external">President’s report</a>
+<a href="../news/2020-06-president-report.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-06-president-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-06-president-report.html" class="no-external-icon">
 Greetings folks.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-06-president-report.html" class="no-external">
+<a href="../news/2020-06-president-report.html" class="no-external-icon">
 <div class="listing-date">
 20 June 2020
 </div>
@@ -1181,22 +1251,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="36" data-listing-date-sort="1589760000000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="393">
-<div class="thumbnail"><a href="../news/2020-05-return.html" class="no-external">
+<div class="quarto-post image-right" data-index="36" data-listing-date-sort="1589760000000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="393">
+<div class="thumbnail"><a href="../news/2020-05-return.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/covid19_return.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-05-return.html" class="no-external">Return to tennis!</a>
+<a href="../news/2020-05-return.html" class="no-external-icon">Return to tennis!</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-05-return.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-05-return.html" class="no-external-icon">
 Dear Members
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-05-return.html" class="no-external">
+<a href="../news/2020-05-return.html" class="no-external-icon">
 <div class="listing-date">
 18 May 2020
 </div>
@@ -1206,22 +1278,24 @@ Lenelle Thomsen
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="37" data-listing-date-sort="1585180800000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
-<div class="thumbnail"><a href="../news/2020-03-covid19.html" class="no-external">
+<div class="quarto-post image-right" data-index="37" data-listing-date-sort="1585180800000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="116">
+<div class="thumbnail"><a href="../news/2020-03-covid19.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/P1040893.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-03-covid19.html" class="no-external">Temporary closure</a>
+<a href="../news/2020-03-covid19.html" class="no-external-icon">Temporary closure</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-03-covid19.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-03-covid19.html" class="no-external-icon">
 Dear Members,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-03-covid19.html" class="no-external">
+<a href="../news/2020-03-covid19.html" class="no-external-icon">
 <div class="listing-date">
 26 March 2020
 </div>
@@ -1231,44 +1305,48 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="38" data-listing-date-sort="1584144000000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
-<div class="thumbnail"><a href="../news/2020-03-workingbee.html" class="no-external">
+<div class="quarto-post image-right" data-index="38" data-listing-date-sort="1584144000000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="thumbnail"><a href="../news/2020-03-workingbee.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/workingbee_march2020.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-03-workingbee.html" class="no-external">Working bee</a>
+<a href="../news/2020-03-workingbee.html" class="no-external-icon">Working bee</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-03-workingbee.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-03-workingbee.html" class="no-external-icon">
 Thanks to everyone who came along for our working bee on Saturday 14th March. The courts are all weeded, leaves swept, drains cleaned and some extra sand has been put on…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-03-workingbee.html" class="no-external">
+<a href="../news/2020-03-workingbee.html" class="no-external-icon">
 <div class="listing-date">
 14 March 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="39" data-listing-date-sort="1582502400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="457">
-<div class="thumbnail"><a href="../news/2020-02-president-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="39" data-listing-date-sort="1582502400000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="457">
+<div class="thumbnail"><a href="../news/2020-02-president-report.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/heathmont_winners.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-02-president-report.html" class="no-external">President’s report</a>
+<a href="../news/2020-02-president-report.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-02-president-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-02-president-report.html" class="no-external-icon">
 Welcome to the 2020 season of tennis!
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-02-president-report.html" class="no-external">
+<a href="../news/2020-02-president-report.html" class="no-external-icon">
 <div class="listing-date">
 24 February 2020
 </div>
@@ -1278,110 +1356,120 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="40" data-listing-date-sort="1580860800000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
-<div class="thumbnail"><a href="../news/2020-01-newnets.html" class="no-external">
+<div class="quarto-post image-right" data-index="40" data-listing-date-sort="1580860800000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<div class="thumbnail"><a href="../news/2020-01-newnets.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/newnets1.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2020-01-newnets.html" class="no-external">New nets thanks to Bendigo Bank</a>
+<a href="../news/2020-01-newnets.html" class="no-external-icon">New nets thanks to Bendigo Bank</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2020-01-newnets.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2020-01-newnets.html" class="no-external-icon">
 We are delighted that our courts finally have some lovely new nets, thanks to a grant from Bendigo Bank.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2020-01-newnets.html" class="no-external">
+<a href="../news/2020-01-newnets.html" class="no-external-icon">
 <div class="listing-date">
 5 February 2020
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="41" data-listing-date-sort="1576972800000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
-<div class="thumbnail"><a href="../news/2019-12-Interclub-challenge.html" class="no-external">
+<div class="quarto-post image-right" data-index="41" data-listing-date-sort="1576972800000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="203">
+<div class="thumbnail"><a href="../news/2019-12-Interclub-challenge.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/DSC_0666.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-12-Interclub-challenge.html" class="no-external">Crumbles Bakehouse 2020 Interclub Challenge</a>
+<a href="../news/2019-12-Interclub-challenge.html" class="no-external-icon">Crumbles Bakehouse 2020 Interclub Challenge</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-12-Interclub-challenge.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-12-Interclub-challenge.html" class="no-external-icon">
 Parker Reserve TC invites senior players from Heathmont, Guy Turner &amp; Miller Park Tennis Clubs for a weekend of competitive tennis and social fun!
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-12-Interclub-challenge.html" class="no-external">
+<a href="../news/2019-12-Interclub-challenge.html" class="no-external-icon">
 <div class="listing-date">
 22 December 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="42" data-listing-date-sort="1576961484000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
-<div class="thumbnail"><a href="../news/2019-12-Christmas.html" class="no-external">
+<div class="quarto-post image-right" data-index="42" data-listing-date-sort="1576961484000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="20">
+<div class="thumbnail"><a href="../news/2019-12-Christmas.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/christmas_2019_2.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-12-Christmas.html" class="no-external">Christmas BBQ</a>
+<a href="../news/2019-12-Christmas.html" class="no-external-icon">Christmas BBQ</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-12-Christmas.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-12-Christmas.html" class="no-external-icon">
 We had a lovely BBQ and some social tennis on Saturday. Here are some photos of the festivities and tennis.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-12-Christmas.html" class="no-external">
+<a href="../news/2019-12-Christmas.html" class="no-external-icon">
 <div class="listing-date">
 21 December 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="43" data-listing-date-sort="1576925484000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="61">
-<div class="thumbnail"><a href="../news/2019-12-Junior_Christmas.html" class="no-external">
+<div class="quarto-post image-right" data-index="43" data-listing-date-sort="1576925484000" data-listing-file-modified-sort="1795608019499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="61">
+<div class="thumbnail"><a href="../news/2019-12-Junior_Christmas.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/junior_breakup_2019_1.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-12-Junior_Christmas.html" class="no-external">Junior Christmas Breakup</a>
+<a href="../news/2019-12-Junior_Christmas.html" class="no-external-icon">Junior Christmas Breakup</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-12-Junior_Christmas.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-12-Junior_Christmas.html" class="no-external-icon">
 The junior Christmas break-up party was held on Saturday morning.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-12-Junior_Christmas.html" class="no-external">
+<a href="../news/2019-12-Junior_Christmas.html" class="no-external-icon">
 <div class="listing-date">
 21 December 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="44" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="289">
-<div class="thumbnail"><a href="../news/2019-12-01-presidents-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="44" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="289">
+<div class="thumbnail"><a href="../news/2019-12-01-presidents-report.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/auray_hu.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-12-01-presidents-report.html" class="no-external">President’s report</a>
+<a href="../news/2019-12-01-presidents-report.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-12-01-presidents-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-12-01-presidents-report.html" class="no-external-icon">
 Christmas greetings everyone. The competition season has now ended for everyone, so the courts are available for social play until February. Congratulations to our Monday…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-12-01-presidents-report.html" class="no-external">
+<a href="../news/2019-12-01-presidents-report.html" class="no-external-icon">
 <div class="listing-date">
 1 December 2019
 </div>
@@ -1391,44 +1479,48 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="45" data-listing-date-sort="1571179171000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
-<div class="thumbnail"><a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external">
+<div class="quarto-post image-right" data-index="45" data-listing-date-sort="1571179171000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="101">
+<div class="thumbnail"><a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/shirts.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external">HPRTC Uniforms Available</a>
+<a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external-icon">HPRTC Uniforms Available</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external-icon">
 Full size range available from 5XS through to 5XL
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external">
+<a href="../news/2019-10-15-hprtc-uniforms-available.html" class="no-external-icon">
 <div class="listing-date">
 15 October 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="46" data-listing-date-sort="1571175498000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="547">
-<div class="thumbnail"><a href="../news/2019-10-15-presidents-report.html" class="no-external">
+<div class="quarto-post image-right" data-index="46" data-listing-date-sort="1571175498000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="547">
+<div class="thumbnail"><a href="../news/2019-10-15-presidents-report.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/IMAG0871.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-10-15-presidents-report.html" class="no-external">President’s report</a>
+<a href="../news/2019-10-15-presidents-report.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-10-15-presidents-report.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-10-15-presidents-report.html" class="no-external-icon">
 Greetings fellow tennis players!
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-10-15-presidents-report.html" class="no-external">
+<a href="../news/2019-10-15-presidents-report.html" class="no-external-icon">
 <div class="listing-date">
 15 October 2019
 </div>
@@ -1438,44 +1530,48 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="47" data-listing-date-sort="1560386327000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
-<div class="thumbnail"><a href="../news/2019-06-13-club-championship-results.html" class="no-external">
+<div class="quarto-post image-right" data-index="47" data-listing-date-sort="1560386327000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
+<div class="thumbnail"><a href="../news/2019-06-13-club-championship-results.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/club_championships_2019.png" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-06-13-club-championship-results.html" class="no-external">Club Championship Results</a>
+<a href="../news/2019-06-13-club-championship-results.html" class="no-external-icon">Club Championship Results</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-06-13-club-championship-results.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-06-13-club-championship-results.html" class="no-external-icon">
 What a weekend!!
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-06-13-club-championship-results.html" class="no-external">
+<a href="../news/2019-06-13-club-championship-results.html" class="no-external-icon">
 <div class="listing-date">
 13 June 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="48" data-listing-date-sort="1560385965000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
-<div class="thumbnail"><a href="../news/2019-06-13-report-jun-2019.html" class="no-external">
+<div class="quarto-post image-right" data-index="48" data-listing-date-sort="1560385965000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
+<div class="thumbnail"><a href="../news/2019-06-13-report-jun-2019.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/P1040894.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-06-13-report-jun-2019.html" class="no-external">President’s report</a>
+<a href="../news/2019-06-13-report-jun-2019.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-06-13-report-jun-2019.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-06-13-report-jun-2019.html" class="no-external-icon">
 Greetings all members,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-06-13-report-jun-2019.html" class="no-external">
+<a href="../news/2019-06-13-report-jun-2019.html" class="no-external-icon">
 <div class="listing-date">
 13 June 2019
 </div>
@@ -1485,66 +1581,72 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="49" data-listing-date-sort="1557544484000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
-<div class="thumbnail"><a href="../news/2019-05-11-2019-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="49" data-listing-date-sort="1557544484000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
+<div class="thumbnail"><a href="../news/2019-05-11-2019-club-championships.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-05-11-2019-club-championships.html" class="no-external">2019 Club Championships</a>
+<a href="../news/2019-05-11-2019-club-championships.html" class="no-external-icon">2019 Club Championships</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-05-11-2019-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-05-11-2019-club-championships.html" class="no-external-icon">
 It’s that time of the year again – our 2019 Club Championships are drawing closer! This year they are being held over the weekend of the 1st &amp; 2nd of June, from 12 noon…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-05-11-2019-club-championships.html" class="no-external">
+<a href="../news/2019-05-11-2019-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 11 May 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="50" data-listing-date-sort="1554884507000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
-<div class="thumbnail"><a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external">
+<div class="quarto-post image-right" data-index="50" data-listing-date-sort="1554884507000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="256">
+<div class="thumbnail"><a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external">Junior tennis meeting (23 April)</a>
+<a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external-icon">Junior tennis meeting (23 April)</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external-icon">
 All parents and junior players are cordially invited to a Junior Convenor’s meeting on 23 April at the club house – 6:30 to 7pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external">
+<a href="../news/2019-04-10-junior-tennis-meeting-23-apr-2019.html" class="no-external-icon">
 <div class="listing-date">
 10 April 2019
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="51" data-listing-date-sort="1554884104000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="332">
-<div class="thumbnail"><a href="../news/2019-04-10-report-apr-2019.html" class="no-external">
+<div class="quarto-post image-right" data-index="51" data-listing-date-sort="1554884104000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="332">
+<div class="thumbnail"><a href="../news/2019-04-10-report-apr-2019.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-04-10-report-apr-2019.html" class="no-external">President’s report</a>
+<a href="../news/2019-04-10-report-apr-2019.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-04-10-report-apr-2019.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-04-10-report-apr-2019.html" class="no-external-icon">
 Autumn Greetings 2019,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-04-10-report-apr-2019.html" class="no-external">
+<a href="../news/2019-04-10-report-apr-2019.html" class="no-external-icon">
 <div class="listing-date">
 10 April 2019
 </div>
@@ -1554,22 +1656,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="52" data-listing-date-sort="1550780445000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="364">
-<div class="thumbnail"><a href="../news/2019-02-21-report-feb-2019.html" class="no-external">
+<div class="quarto-post image-right" data-index="52" data-listing-date-sort="1550780445000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="364">
+<div class="thumbnail"><a href="../news/2019-02-21-report-feb-2019.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2019-02-21-report-feb-2019.html" class="no-external">President’s report</a>
+<a href="../news/2019-02-21-report-feb-2019.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2019-02-21-report-feb-2019.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2019-02-21-report-feb-2019.html" class="no-external-icon">
 Summer greetings 2019,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2019-02-21-report-feb-2019.html" class="no-external">
+<a href="../news/2019-02-21-report-feb-2019.html" class="no-external-icon">
 <div class="listing-date">
 21 February 2019
 </div>
@@ -1579,44 +1683,48 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="53" data-listing-date-sort="1546130388000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
-<div class="thumbnail"><a href="../news/2018-12-30-some-grants.html" class="no-external">
+<div class="quarto-post image-right" data-index="53" data-listing-date-sort="1546130388000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<div class="thumbnail"><a href="../news/2018-12-30-some-grants.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/P1060264.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-12-30-some-grants.html" class="no-external">Some grants!</a>
+<a href="../news/2018-12-30-some-grants.html" class="no-external-icon">Some grants!</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-12-30-some-grants.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-12-30-some-grants.html" class="no-external-icon">
 On 18 December 2018, the club received two grants of $2,500 each, one from Michael Sukkar (Federal member for Deakin), and a matching grant from Maroondah Council.&nbsp; Michael…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-12-30-some-grants.html" class="no-external">
+<a href="../news/2018-12-30-some-grants.html" class="no-external-icon">
 <div class="listing-date">
 30 December 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="54" data-listing-date-sort="1545785108000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
-<div class="thumbnail"><a href="../news/2018-12-26-report-dec-2018.html" class="no-external">
+<div class="quarto-post image-right" data-index="54" data-listing-date-sort="1545785108000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="395">
+<div class="thumbnail"><a href="../news/2018-12-26-report-dec-2018.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-12-26-report-dec-2018.html" class="no-external">President’s report</a>
+<a href="../news/2018-12-26-report-dec-2018.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-12-26-report-dec-2018.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-12-26-report-dec-2018.html" class="no-external-icon">
 Greetings,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-12-26-report-dec-2018.html" class="no-external">
+<a href="../news/2018-12-26-report-dec-2018.html" class="no-external-icon">
 <div class="listing-date">
 26 December 2018
 </div>
@@ -1626,44 +1734,48 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="55" data-listing-date-sort="1532151515000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
-<div class="thumbnail"><a href="../news/2018-07-21-agm2018.html" class="no-external">
+<div class="quarto-post image-right" data-index="55" data-listing-date-sort="1532151515000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="31">
+<div class="thumbnail"><a href="../news/2018-07-21-agm2018.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/P1040894.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-07-21-agm2018.html" class="no-external">Annual General Meeting</a>
+<a href="../news/2018-07-21-agm2018.html" class="no-external-icon">Annual General Meeting</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-07-21-agm2018.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-07-21-agm2018.html" class="no-external-icon">
 Our annual general meeting was held on Saturday 21st July at the club rooms. Here are some reports and photos from the meeting.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-07-21-agm2018.html" class="no-external">
+<a href="../news/2018-07-21-agm2018.html" class="no-external-icon">
 <div class="listing-date">
 21 July 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="56" data-listing-date-sort="1531953602000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="467">
-<div class="thumbnail"><a href="../news/2018-07-18-report-jul-2018.html" class="no-external">
+<div class="quarto-post image-right" data-index="56" data-listing-date-sort="1531953602000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="467">
+<div class="thumbnail"><a href="../news/2018-07-18-report-jul-2018.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-07-18-report-jul-2018.html" class="no-external">President’s report</a>
+<a href="../news/2018-07-18-report-jul-2018.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-07-18-report-jul-2018.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-07-18-report-jul-2018.html" class="no-external-icon">
 Wintery Greetings,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-07-18-report-jul-2018.html" class="no-external">
+<a href="../news/2018-07-18-report-jul-2018.html" class="no-external-icon">
 <div class="listing-date">
 18 July 2018
 </div>
@@ -1673,88 +1785,96 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="57" data-listing-date-sort="1530870854000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
-<div class="thumbnail"><a href="../news/2018-07-06-2018-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="57" data-listing-date-sort="1530870854000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="thumbnail"><a href="../news/2018-07-06-2018-club-championships.html" class="no-external-icon">
 
 <img loading="lazy" data-src="../media/P1040787.jpg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-07-06-2018-club-championships.html" class="no-external">2018 Club championships</a>
+<a href="../news/2018-07-06-2018-club-championships.html" class="no-external-icon">2018 Club championships</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-07-06-2018-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-07-06-2018-club-championships.html" class="no-external-icon">
 Congratulations to the winners of our club championships! And thanks to everyone who participated.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-07-06-2018-club-championships.html" class="no-external">
+<a href="../news/2018-07-06-2018-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 6 July 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="58" data-listing-date-sort="1530065534000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
-<div class="thumbnail"><a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external">
+<div class="quarto-post image-right" data-index="58" data-listing-date-sort="1530065534000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="33">
+<div class="thumbnail"><a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external">Annual General Meeting 2018</a>
+<a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external-icon">Annual General Meeting 2018</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external-icon">
 All members are invited to the Annual General Meeting of the H E Parker Reserve Tennis Club to be held in the clubroom on Saturday 21 July 2018, commencing at 1:00pm.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external">
+<a href="../news/2018-06-27-annual-general-meeting-2018.html" class="no-external-icon">
 <div class="listing-date">
 27 June 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="59" data-listing-date-sort="1527306473000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
-<div class="thumbnail"><a href="../news/2018-05-26-club-championships.html" class="no-external">
+<div class="quarto-post image-right" data-index="59" data-listing-date-sort="1527306473000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="thumbnail"><a href="../news/2018-05-26-club-championships.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-05-26-club-championships.html" class="no-external">Club championships</a>
+<a href="../news/2018-05-26-club-championships.html" class="no-external-icon">Club championships</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-05-26-club-championships.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-05-26-club-championships.html" class="no-external-icon">
 The Club Championships are being held on the weekend of 22 – 24 June. A great opportunity to have some fun, test your skill and check out the new facilities. Entry forms…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-05-26-club-championships.html" class="no-external">
+<a href="../news/2018-05-26-club-championships.html" class="no-external-icon">
 <div class="listing-date">
 26 May 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="60" data-listing-date-sort="1527302592000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
-<div class="thumbnail"><a href="../news/2018-05-26-report-may-2018.html" class="no-external">
+<div class="quarto-post image-right" data-index="60" data-listing-date-sort="1527302592000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<div class="thumbnail"><a href="../news/2018-05-26-report-may-2018.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-05-26-report-may-2018.html" class="no-external">President’s report</a>
+<a href="../news/2018-05-26-report-may-2018.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-05-26-report-may-2018.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-05-26-report-may-2018.html" class="no-external-icon">
 Wintery Greetings.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-05-26-report-may-2018.html" class="no-external">
+<a href="../news/2018-05-26-report-may-2018.html" class="no-external-icon">
 <div class="listing-date">
 26 May 2018
 </div>
@@ -1764,22 +1884,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="61" data-listing-date-sort="1517827884000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<div class="thumbnail"><a href="../news/2018-02-05-saturday-social.html" class="no-external">
+<div class="quarto-post image-right" data-index="61" data-listing-date-sort="1517827884000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="thumbnail"><a href="../news/2018-02-05-saturday-social.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-02-05-saturday-social.html" class="no-external">Saturday social</a>
+<a href="../news/2018-02-05-saturday-social.html" class="no-external-icon">Saturday social</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-02-05-saturday-social.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-02-05-saturday-social.html" class="no-external-icon">
 Saturday social has kicked off with a bang this year. If you are around on a Saturday, come down for a hit, play starts at 2pm. There is always a friendly face at Saturday…
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-02-05-saturday-social.html" class="no-external">
+<a href="../news/2018-02-05-saturday-social.html" class="no-external-icon">
 <div class="listing-date">
 5 February 2018
 </div>
@@ -1789,44 +1911,48 @@ Peter O’Connor
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="62" data-listing-date-sort="1517827733000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
-<div class="thumbnail"><a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external">
+<div class="quarto-post image-right" data-index="62" data-listing-date-sort="1517827733000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
+<div class="thumbnail"><a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external">Social news and fundraisers</a>
+<a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external-icon">Social news and fundraisers</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external-icon">
 Thanks to all members who supported four social and fundraising activities towards the end of 2017.
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external">
+<a href="../news/2018-02-05-social-news-and-fundraisers.html" class="no-external-icon">
 <div class="listing-date">
 5 February 2018
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="63" data-listing-date-sort="1517827459000" data-listing-file-modified-sort="1784518388772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
-<div class="thumbnail"><a href="../news/2018-02-05-report-feb-2018.html" class="no-external">
+<div class="quarto-post image-right" data-index="63" data-listing-date-sort="1517827459000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
+<div class="thumbnail"><a href="../news/2018-02-05-report-feb-2018.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2018-02-05-report-feb-2018.html" class="no-external">President’s report</a>
+<a href="../news/2018-02-05-report-feb-2018.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2018-02-05-report-feb-2018.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2018-02-05-report-feb-2018.html" class="no-external-icon">
 Greetings,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2018-02-05-report-feb-2018.html" class="no-external">
+<a href="../news/2018-02-05-report-feb-2018.html" class="no-external-icon">
 <div class="listing-date">
 5 February 2018
 </div>
@@ -1836,22 +1962,24 @@ Sue Moreland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="64" data-listing-date-sort="1509446412000" data-listing-file-modified-sort="1784518388771" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
-<div class="thumbnail"><a href="../news/2017-10-31-report-oct-2017.html" class="no-external">
+<div class="quarto-post image-right" data-index="64" data-listing-date-sort="1509446412000" data-listing-file-modified-sort="1795608019498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<div class="thumbnail"><a href="../news/2017-10-31-report-oct-2017.html" class="no-external-icon">
 
 <p class="card-img-top"><img loading='lazy' data-src="/media/DSC_7835.jpg"  class="thumbnail-image card-img"/></p>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../news/2017-10-31-report-oct-2017.html" class="no-external">President’s report</a>
+<a href="../news/2017-10-31-report-oct-2017.html" class="no-external-icon">President’s report</a>
 </h3>
-<div class="delink listing-description"><a href="../news/2017-10-31-report-oct-2017.html" class="no-external">
+<div class="listing-description">
+<a href="../news/2017-10-31-report-oct-2017.html" class="no-external-icon">
 Greetings,
-</a></div>
+</a>
+</div>
 </div>
 <div class="metadata">
-<a href="../news/2017-10-31-report-oct-2017.html" class="no-external">
+<a href="../news/2017-10-31-report-oct-2017.html" class="no-external-icon">
 <div class="listing-date">
 31 October 2017
 </div>
@@ -1945,7 +2073,8 @@ Sue Moreland
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -1954,8 +2083,69 @@ Sue Moreland
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -1969,6 +2159,7 @@ Sue Moreland
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -2131,44 +2322,54 @@ Sue Moreland
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -2266,6 +2467,9 @@ Sue Moreland
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
