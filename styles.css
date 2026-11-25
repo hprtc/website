@@ -69,8 +69,8 @@ a {
 .club-logo {
   display: block;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: auto;
   margin: 1.5rem auto;
-  text-align: center;
+  text-align: left;
 }
