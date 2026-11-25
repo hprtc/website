@@ -3,7 +3,7 @@ project:
 
 website:
   site-url: https://hprtc.org.au
-  title: "Heathmont Parker Reserve Tennis Club"
+  title: "HE Parker Reserve Tennis Club"
   favicon: img/favicon.ico
   navbar:
     background: "#dfdfdf"
@@ -38,9 +38,9 @@ website:
       - text: "Contact"
         href: contact.md
   page-footer:
-    left: "© 2024 Heathmont Parker Reserve Tennis Club"
+    left: "© 2026 HE Parker Reserve Tennis Club"
     background: "#555555"
-    right: Made with [Quarto](https://quarto.org) by [Rob J Hyndman](https://robjhyndman.com)
+    right: Made with [Quarto](https://quarto.org) by [Rob J Hyndman](https://robjhyndman.com) and Alex Chen
 
 date-format: "D MMMM YYYY"
 
