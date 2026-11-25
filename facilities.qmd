@@ -43,7 +43,7 @@ _Visitors who attend with a member:_
 | Wednesday&nbsp; | Ladies Comp & Coaching              | Mixed Doubles & Coaching               |
 | Thursday  | Ladies Comp & Coaching                 | Mens Singles/Doubles & Coaching        |
 | Friday    | Ladies Social & Coaching               | Juniors Social                         |
-| Saturday  | Juniors (morning) Mixed Social (afternoon)&nbsp; |                                        |
+| Saturday  | Juniors (morning)                      |                                        |
 
 ## Maintenance
 
