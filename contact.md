@@ -19,9 +19,9 @@ Please feel free to contact us using the form below.
 
 
 
-> Heathmont Parker Reserve Tennis Club<br>
-PO Box 695, Heathmont,<br>
-Victoria, Australia<br>
+> HE Parker Reserve Tennis Club<br>
+154 Heathmont Rd<br>
+Heathmont, Victoria<br>
 
 <a href="https://goo.gl/maps/T6buFNDCdJ5ufmNy6"><img src = "/img/google_map_icon.png" height=50px alt = "Google map" style="vertical-align: text-bottom;"></a><a href="https://www.facebook.com/hprtc/"><img src = "/img/facebook_logo.png" height=50px alt = "Facebook" style="vertical-align: text-bottom; margin-left: 7px;"></a>
 
