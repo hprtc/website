@@ -116,8 +116,8 @@ img {
 HE Parker Reserve Tennis Club (HPRTC) is located at the end of Heathmont Road, Heathmont, Melbourne. Our aim is to provide an exceptional playing venue for all our members to enjoy our courts. Creating a fun social scene is important and the committee looks to ensure our club is sustainable to all members in years to come.
 
 > HE Parker Reserve Tennis Club<br>
-154 Heathmont Rd, Heathmont,<br>
-Victoria 3135, Australia<br>
+154 Heathmont Rd<br>
+Heathmont, Victoria 3135<br>
 
 <a href="https://goo.gl/maps/T6buFNDCdJ5ufmNy6"><img src = "/img/google_map_icon.png" height=64px alt = "Google map" style="vertical-align: text-bottom;"></a><a href="https://www.facebook.com/hprtc/"><img src = "/img/facebook_logo.png" height=64px alt = "Facebook" style="vertical-align: text-bottom; margin-left: 7px;"></a>
 
