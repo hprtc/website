@@ -38,7 +38,7 @@ website:
       - text: "Contact"
         href: contact.md
   page-footer:
-    left: "© 2026 HE Parker Reserve Tennis Club"
+    left: "© 2026 HE Parker Reserve Tennis Club Inc."
     background: "#555555"
     right: Made with [Quarto](https://quarto.org) by [Rob J Hyndman](https://robjhyndman.com) and Alex Chen
 
