@@ -16,9 +16,8 @@ HE Parker Reserve Tennis&nbsp;Club
 :::
 
 ![](/img/hprtc_logo.png){.club-logo alt="HE Parker Reserve Tennis Club logo"}
-
-::: h2
 *Serving our Tennis Community*
+:::
 ```{r}
 #| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
 source("carousel.R")
