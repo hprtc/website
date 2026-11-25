@@ -30,6 +30,7 @@ a {
 .imgrow {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   padding: 0;
 }
 
@@ -37,12 +38,13 @@ a {
 .imgcolumn {
   flex: 25%;
   max-width: 25%;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding: 0 8px;
+  box-sizing: border-box;
   text-align: center;
 }
 
 .imgcolumn img {
+  width: 100%;
   margin-top: 0px;
   vertical-align: middle;
 }
